@@ -1,0 +1,3 @@
+conda activate ELE361L
+cd C:\Users\ibrbe\OneDrive\Masaüstü\361L\GNU Radio\proje
+python DTMFToneGenerator_2.py
