@@ -1,0 +1,2080 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri May  1 12:44:28 2026
+# Process ID         : 40472
+# Current directory  : C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent9064 C:\Users\USER\Documents\baryonic_space\baryonic_space-main\fpga_fft_project\fpga_fft_project.xpr
+# Log file           : C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/vivado.log
+# Journal file       : C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project\vivado.jou
+# Running On         : DESKTOP-PNADBHN
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700KF
+# CPU Frequency      : 3610 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 20
+# Host memory        : 34164 MB
+# Swap memory        : 5905 MB
+# Total Virtual      : 40069 MB
+# Available Virtual  : 17757 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.xpr
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2024.2/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/USER/Documents/baryonic_space/fpga_fft_project' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+import_files -norecurse {C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/abs_sq.v C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/fft_naive_top.v C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/peak_detector.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/USER/Documents/baryonic_space/baryonic_space-main/sim/tb_fft_naive.sv
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property xsim.simulate.xsim.more_options "+MEM_DIR=C:/Users/USER/Documents/baryonic_space/baryonic_space-main/mem" [get_filesets sim_1]
+create_ip -name xfft -vendor xilinx.com -library ip -version 9.1 -module_name xfft_0
+set_property -dict [list \
+  CONFIG.aresetn {true} \
+  CONFIG.data_format {fixed_point} \
+  CONFIG.implementation_options {pipelined_streaming_io} \
+  CONFIG.input_width {12} \
+  CONFIG.number_of_stages_using_block_ram_for_data_and_phase_factors {1} \
+  CONFIG.output_ordering {natural_order} \
+  CONFIG.phase_factor_width {12} \
+  CONFIG.target_clock_frequency {200} \
+  CONFIG.transform_length {256} \
+  CONFIG.xk_index {true} \
+] [get_ips xfft_0]
+generate_target {instantiation_template} [get_files c:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sources_1/ip/xfft_0/xfft_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'xfft_0'...
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sources_1/ip/xfft_0/xfft_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'xfft_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'xfft_0'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'xfft_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'xfft_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'xfft_0'...
+catch { config_ip_cache -export [get_ips -all xfft_0] }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: xfft_0
+export_ip_user_files -of_objects [get_files c:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sources_1/ip/xfft_0/xfft_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sources_1/ip/xfft_0/xfft_0.xci]
+launch_runs xfft_0_synth_1 -jobs 10
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: xfft_0
+[Fri May  1 15:41:50 2026] Launched xfft_0_synth_1...
+Run output will be captured here: C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.runs/xfft_0_synth_1/runme.log
+INFO: [Vivado 12-4357] Exporting simulation files for 'xfft_0'... please wait for 'xfft_0_synth_1' run to finish...
+wait_on_run xfft_0_synth_1
+[Fri May  1 15:41:50 2026] Waiting for xfft_0_synth_1 to finish...
+[Fri May  1 15:41:55 2026] Waiting for xfft_0_synth_1 to finish...
+[Fri May  1 15:42:00 2026] Waiting for xfft_0_synth_1 to finish...
+[Fri May  1 15:42:05 2026] Waiting for xfft_0_synth_1 to finish...
+[Fri May  1 15:42:15 2026] Waiting for xfft_0_synth_1 to finish...
+[Fri May  1 15:42:25 2026] Waiting for xfft_0_synth_1 to finish...
+[Fri May  1 15:42:35 2026] Waiting for xfft_0_synth_1 to finish...
+[Fri May  1 15:42:45 2026] Waiting for xfft_0_synth_1 to finish...
+[Fri May  1 15:43:05 2026] Waiting for xfft_0_synth_1 to finish...
+[Fri May  1 15:43:25 2026] Waiting for xfft_0_synth_1 to finish...
+
+*** Running vivado
+    with args -log xfft_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source xfft_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Fri May  1 15:41:52 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xfft_0.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: xfft_0
+Command: synth_design -top xfft_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 46152
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1114.090 ; gain = 467.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'xfft_0' [c:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.gen/sources_1/ip/xfft_0/synth/xfft_0.vhd:84]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_PART bound to: xc7z020clg400-1 - type: string 
+	Parameter C_S_AXIS_CONFIG_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXIS_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_DATA_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXIS_DATA_TUSER_WIDTH bound to: 8 - type: integer 
+	Parameter C_M_AXIS_STATUS_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 1 - type: integer 
+	Parameter C_NSSR bound to: 1 - type: integer 
+	Parameter C_CHANNELS bound to: 1 - type: integer 
+	Parameter C_NFFT_MAX bound to: 8 - type: integer 
+	Parameter C_ARCH bound to: 3 - type: integer 
+	Parameter C_HAS_NFFT bound to: 0 - type: integer 
+	Parameter C_USE_FLT_PT bound to: 0 - type: integer 
+	Parameter C_INPUT_WIDTH bound to: 12 - type: integer 
+	Parameter C_TWIDDLE_WIDTH bound to: 12 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 12 - type: integer 
+	Parameter C_HAS_SCALING bound to: 1 - type: integer 
+	Parameter C_HAS_BFP bound to: 0 - type: integer 
+	Parameter C_HAS_ROUNDING bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 1 - type: integer 
+	Parameter C_HAS_OVFLO bound to: 0 - type: integer 
+	Parameter C_HAS_NATURAL_INPUT bound to: 1 - type: integer 
+	Parameter C_HAS_NATURAL_OUTPUT bound to: 1 - type: integer 
+	Parameter C_HAS_CYCLIC_PREFIX bound to: 0 - type: integer 
+	Parameter C_HAS_XK_INDEX bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_TWIDDLE_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BRAM_STAGES bound to: 1 - type: integer 
+	Parameter C_REORDER_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_USE_HYBRID_RAM bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 0 - type: integer 
+	Parameter C_CMPY_TYPE bound to: 1 - type: integer 
+	Parameter C_BFLY_TYPE bound to: 0 - type: integer 
+	Parameter C_SYSTOLICFFT_INV bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xfft_v9_1_13' declared at 'c:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.gen/sources_1/ip/xfft_0/hdl/xfft_v9_1.vhd:58' bound to instance 'U0' of component 'xfft_v9_1_13' [c:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.gen/sources_1/ip/xfft_0/synth/xfft_0.vhd:207]
+INFO: [Synth 8-256] done synthesizing module 'xfft_0' (0#1) [c:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.gen/sources_1/ip/xfft_0/synth/xfft_0.vhd:84]
+WARNING: [Synth 8-7129] Port Q[0] in module shift_ram__parameterized74 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[0] in module shift_ram__parameterized74 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module shift_ram__parameterized74 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module shift_ram__parameterized74 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module shift_ram__parameterized74 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COMBI_SCLR in module shift_ram__parameterized74 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEPTHx2 in module shift_ram__parameterized74 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[3] in module c_shift_ram_v12_0_18_legacy__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[2] in module c_shift_ram_v12_0_18_legacy__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module c_shift_ram_v12_0_18_legacy__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module c_shift_ram_v12_0_18_legacy__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclr in module c_shift_ram_v12_0_18_legacy__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aset in module c_shift_ram_v12_0_18_legacy__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ainit in module c_shift_ram_v12_0_18_legacy__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sclr in module c_shift_ram_v12_0_18_legacy__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_shift_ram_v12_0_18_legacy__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_shift_ram_v12_0_18_legacy__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[0] in module shift_ram__parameterized76 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEPTHx2 in module shift_ram__parameterized76 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[15] in module shift_ram__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[14] in module shift_ram__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[13] in module shift_ram__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[12] in module shift_ram__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[11] in module shift_ram__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[10] in module shift_ram__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[9] in module shift_ram__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[8] in module shift_ram__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[7] in module shift_ram__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[6] in module shift_ram__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[5] in module shift_ram__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[4] in module shift_ram__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[3] in module shift_ram__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[2] in module shift_ram__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[1] in module shift_ram__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[0] in module shift_ram__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEPTHx2 in module shift_ram__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[3] in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[2] in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[1] in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[0] in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclr in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aset in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ainit in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sclr in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_shift_ram_v12_0_18_legacy is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[0] in module shift_ram__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEPTHx2 in module shift_ram__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D1 in module shift_ram__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEPTHx2 in module shift_ram__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port depthx2 in module r22_memory__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q1 in module shift_ram__parameterized71 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D1 in module shift_ram__parameterized71 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COMBI_SCLR in module shift_ram__parameterized71 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEPTHx2 in module shift_ram__parameterized71 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D1 in module shift_ram__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEPTHx2 in module shift_ram__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[0] in module shift_ram__parameterized22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module shift_ram__parameterized22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COMBI_SCLR in module shift_ram__parameterized22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEPTHx2 in module shift_ram__parameterized22 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Q1 in module shift_ram__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D1 in module shift_ram__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module shift_ram__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module shift_ram__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module shift_ram__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COMBI_SCLR in module shift_ram__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEPTHx2 in module shift_ram__parameterized70 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D1 in module shift_ram__parameterized69 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module shift_ram__parameterized69 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COMBI_SCLR in module shift_ram__parameterized69 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEPTHx2 in module shift_ram__parameterized69 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D[0] in module shift_ram__parameterized34 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port COMBI_SCLR in module shift_ram__parameterized34 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEPTHx2 in module shift_ram__parameterized34 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MUXCY_IN in module equ_rtl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AINIT in module c_reg_fd_v12_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLR in module c_reg_fd_v12_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ASET in module c_reg_fd_v12_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module c_reg_fd_v12_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module c_reg_fd_v12_0_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port add in module c_addsub_v12_0_19_lut6_legacy__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bypass in module c_addsub_v12_0_19_lut6_legacy__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_addsub_v12_0_19_lut6_legacy__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_addsub_v12_0_19_lut6_legacy__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in in module c_addsub_v12_0_19_legacy__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_signed in module c_addsub_v12_0_19_legacy__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_signed in module c_addsub_v12_0_19_legacy__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MAX[7] in module cnt_tc_rtl_a__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MAX[6] in module cnt_tc_rtl_a__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MAX[5] in module cnt_tc_rtl_a__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MAX[4] in module cnt_tc_rtl_a__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MAX[3] in module cnt_tc_rtl_a__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MAX[2] in module cnt_tc_rtl_a__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MAX[1] in module cnt_tc_rtl_a__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MAX[0] in module cnt_tc_rtl_a__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LOAD[7] in module cnt_tc_rtl_a__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LOAD[6] in module cnt_tc_rtl_a__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LOAD[5] in module cnt_tc_rtl_a__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LOAD[4] in module cnt_tc_rtl_a__parameterized0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 3109.875 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1310 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.gen/sources_1/ip/xfft_0/xfft_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.gen/sources_1/ip/xfft_0/xfft_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.runs/xfft_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.runs/xfft_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3109.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 182 instances were transformed.
+  FD => FDRE: 4 instances
+  FDE => FDRE: 146 instances
+  FDR => FDRE: 32 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 3109.875 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.runs/xfft_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[3].delay_reset_pe/tc_compare' (logic_gate) to 'U0/i_synth/non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[3].delay_reset_pe/tc_compare1'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[2].delay_reset_pe/tc_compare' (logic_gate__parameterized0) to 'U0/i_synth/non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[2].delay_reset_pe/tc_compare1'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[1].delay_reset_pe/tc_compare' (logic_gate__parameterized1) to 'U0/i_synth/non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[1].delay_reset_pe/tc_compare1'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[0].delay_reset_pe/tc_compare' (logic_gate__parameterized2) to 'U0/i_synth/non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[0].delay_reset_pe/tc_compare1'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.delay_reset_3/tc_compare' (logic_gate__parameterized3) to 'U0/i_synth/non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.delay_reset_3/tc_compare1'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.delay_reset_7/tc_compare' (logic_gate__parameterized4) to 'U0/i_synth/non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.delay_reset_7/tc_compare1'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[3].delay_reset_pe/tc_reg1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[2].delay_reset_pe/tc_reg1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[1].delay_reset_pe/tc_reg1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.resets_4_pes[0].delay_reset_pe/tc_reg1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.delay_reset_3/tc_reg1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/reset_sustain.delay_reset_7/tc_reg1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_addr_gen.next_bf1_addr_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/has_scale_pipelining.pe_ovflo_delay/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[3].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/hasbf2.FB_2.BF_2/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/hasbf2.FB_2.BF_2/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/hasbf2.FB_2.BF_2/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/hasbf2.FB_2.BF_2/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/hasbf2.FB_2.BF_2/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/hasbf2.FB_2.BF_2/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[22].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[21].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[20].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[7].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[6].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[5].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[4].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[3].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[2].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[1].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[0].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[22].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[21].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[20].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[7].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[6].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[5].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[4].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[3].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[2].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[1].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[0].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[0].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[2].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FB_1.BF_1/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FB_1.BF_1/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FB_1.BF_1/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FB_1.BF_1/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/FB_1.BF_1/wr_addr_del/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.runt_srl_loop.i_fdre) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[22].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[21].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[20].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[7].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[6].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[5].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[4].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[3].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[2].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[1].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[0].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[22].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[21].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[20].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[7].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[6].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[5].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[4].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[3].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[2].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[1].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[1].natural_order_input.PE/scaling2bits.scaler_im/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[0].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/delay_addr_bf2/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[0].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre0) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/delay_addr_tw/no_sclr_lut.real_shift_ram.use_baseblock.use_hlutnm_srls.srl_loop[1].i_fdre1) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Synth 8-3332] Sequential element (non_native_floating_point.xfft_inst/non_floating_point.arch_d.xfft_inst/pe_gen[2].natural_order_input.PE/scaling2bits.scaler_re/scale_mux/four_inputs.use_lut6.no_lut_sclr.four_to_one_mux[22].latency1.reg) is unused and will be removed from module xfft_v9_1_13_viv.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:08 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:13 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:14 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:09 ; elapsed = 00:01:16 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:11 ; elapsed = 00:01:18 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:01:18 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:18 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:12 ; elapsed = 00:01:18 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:12 ; elapsed = 00:01:18 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:12 ; elapsed = 00:01:18 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name             | DSP Mapping              | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp_205                 | (C'-(((D'+A'')'*B'')'))' | 25     | 18     | 48     | 25     | 43     | 2    | 2    | 1    | 1    | 1     | 1    | 1    | 
+|dsp__parameterized0_204 | (C+((D'+A')'*B'')')'     | 25     | 18     | 5      | 25     | 43     | 1    | 2    | 0    | 1    | 1     | 1    | 1    | 
+|dsp__parameterized1_202 | (C'+((D'-A'')'*B'')')'   | 25     | 18     | 48     | 25     | 43     | 2    | 2    | 1    | 1    | 1     | 1    | 1    | 
+|dsp_132                 | (C'-(((D'+A'')'*B'')'))' | 25     | 18     | 48     | 25     | 43     | 2    | 2    | 1    | 1    | 1     | 1    | 1    | 
+|dsp__parameterized0_131 | (C+((D'+A')'*B'')')'     | 25     | 18     | 5      | 25     | 43     | 1    | 2    | 0    | 1    | 1     | 1    | 1    | 
+|dsp__parameterized1_129 | (C'+((D'-A'')'*B'')')'   | 25     | 18     | 48     | 25     | 43     | 2    | 2    | 1    | 1    | 1     | 1    | 1    | 
+|dsp                     | (C'-(((D'+A'')'*B'')'))' | 25     | 18     | 48     | 25     | 43     | 2    | 2    | 1    | 1    | 1     | 1    | 1    | 
+|dsp__parameterized0     | (C+((D'+A')'*B'')')'     | 25     | 18     | 5      | 25     | 43     | 1    | 2    | 0    | 1    | 1     | 1    | 1    | 
+|dsp__parameterized1     | (C'+((D'-A'')'*B'')')'   | 25     | 18     | 48     | 25     | 43     | 2    | 2    | 1    | 1    | 1     | 1    | 1    | 
++------------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    22|
+|2     |DSP48E1  |     9|
+|4     |LUT1     |    25|
+|5     |LUT2     |   365|
+|6     |LUT3     |   696|
+|7     |LUT4     |   191|
+|8     |LUT5     |    24|
+|9     |LUT6     |   193|
+|10    |MUXCY    |   558|
+|11    |RAM64X1S |    23|
+|12    |RAMB18E1 |     2|
+|13    |SRL16E   |   529|
+|14    |SRLC32E  |   106|
+|15    |XORCY    |   551|
+|16    |FD       |     4|
+|17    |FDE      |   146|
+|18    |FDR      |    31|
+|19    |FDRE     |  2601|
+|20    |FDSE     |    35|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:12 ; elapsed = 00:01:18 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 681 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:01:16 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 3109.875 ; gain = 2462.977
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 3109.875 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1346 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3109.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 387 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 183 instances
+  FD => FDRE: 4 instances
+  FDE => FDRE: 146 instances
+  FDR => FDRE: 31 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 23 instances
+
+Synth Design complete | Checksum: de4528e1
+INFO: [Common 17-83] Releasing license: Synthesis
+129 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:16 ; elapsed = 00:01:23 . Memory (MB): peak = 3109.875 ; gain = 2698.340
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 3109.875 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.runs/xfft_0_synth_1/xfft_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP xfft_0, cache-ID = de31c5df71ba3bd5
+INFO: [Coretcl 2-1174] Renamed 607 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 3109.875 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.runs/xfft_0_synth_1/xfft_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file xfft_0_utilization_synth.rpt -pb xfft_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May  1 15:43:27 2026...
+[Fri May  1 15:43:30 2026] xfft_0_synth_1 finished
+wait_on_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:01:40 . Memory (MB): peak = 1456.441 ; gain = 16.473
+export_simulation -lib_map_path [list {modelsim=C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.cache/compile_simlib/modelsim} {questa=C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.cache/compile_simlib/questa} {riviera=C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.cache/compile_simlib/riviera} {activehdl=C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.cache/compile_simlib/activehdl}] -of_objects [get_files c:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sources_1/ip/xfft_0/xfft_0.xci] -directory C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.ip_user_files -ipstatic_source_dir C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
++MEM_DIR=C:/Users/USER/Documents/baryonic_space/baryonic_space-main/mem
+invalid command name "+MEM_DIR=C:/Users/USER/Documents/baryonic_space/baryonic_space-main/mem"
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USER\Documents\baryonic_space\baryonic_space-main\fpga_fft_project\fpga_fft_project.srcs\sim_1\imports\sim\tb_fft_naive.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USER\Documents\baryonic_space\baryonic_space-main\fpga_fft_project\fpga_fft_project.srcs\sources_1\imports\rtl\fft_naive_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USER\Documents\baryonic_space\baryonic_space-main\fpga_fft_project\fpga_fft_project.srcs\sim_1\imports\sim\tb_fft_naive.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USER\Documents\baryonic_space\baryonic_space-main\fpga_fft_project\fpga_fft_project.srcs\sim_1\imports\sim\tb_fft_naive.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_fft_naive'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_fft_naive' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_fft_naive_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.gen/sources_1/ip/xfft_0/xfft_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xfft_0
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13
+INFO: [VRFC 10-311] analyzing module xfft_0_adder
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized0_31
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized0_32
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized0_5
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized0_84
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized0_85
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized2_19
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized2_62
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized2_63
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_adder_bypass
+INFO: [VRFC 10-311] analyzing module xfft_0_adder_bypass_140
+INFO: [VRFC 10-311] analyzing module xfft_0_adder_bypass_217
+INFO: [VRFC 10-311] analyzing module xfft_0_adder_bypass_218
+INFO: [VRFC 10-311] analyzing module xfft_0_adder_bypass__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_adder_bypass__parameterized0_169
+INFO: [VRFC 10-311] analyzing module xfft_0_arith_shift3
+INFO: [VRFC 10-311] analyzing module xfft_0_arith_shift3_156
+INFO: [VRFC 10-311] analyzing module xfft_0_arith_shift3_157
+INFO: [VRFC 10-311] analyzing module xfft_0_arith_shift3_29
+INFO: [VRFC 10-311] analyzing module xfft_0_arith_shift3_80
+INFO: [VRFC 10-311] analyzing module xfft_0_arith_shift3_81
+INFO: [VRFC 10-311] analyzing module xfft_0_arith_shift3__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_arith_shift3__parameterized0_3
+INFO: [VRFC 10-311] analyzing module xfft_0_axi_wrapper
+INFO: [VRFC 10-311] analyzing module xfft_0_axi_wrapper_input_fifo
+INFO: [VRFC 10-311] analyzing module xfft_0_axi_wrapper_input_fifo__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_axi_wrapper_output_fifo
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized10
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized11
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized12
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized13
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized14
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized15
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized16
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized17
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized18
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized1__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized1__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized1__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized20
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized21
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized22
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized23
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized2__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized2__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__10
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__11
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__6
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__8
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__9
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized6
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized8
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized10
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized11
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized12
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized13
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized14
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized15
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized16
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized17
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized18
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized1__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized1__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized1__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized20
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized21
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized22
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized23
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized24
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized25
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized2__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized2__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__10
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__6
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__8
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__9
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized6
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized8
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_151
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_122
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_195
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult_125
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult_198
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult__parameterized0_126
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult__parameterized0_199
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult__parameterized1_127
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult__parameterized1_200
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_79
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_delay_line__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_delay_line__parameterized1_123
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_delay_line__parameterized1_124
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_delay_line__parameterized1_196
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_delay_line__parameterized1_197
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_delay_line__parameterized1_60
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_synth
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_synth_121
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_synth_194
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_sat
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_sat__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_sat__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_sat__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_sat__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_sat__parameterized4
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a__parameterized0_106
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a__parameterized0_113
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a__parameterized0_179
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a__parameterized0_186
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a__parameterized0_237
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a__parameterized0_253
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a__parameterized0_53
+INFO: [VRFC 10-311] analyzing module xfft_0_dpm
+INFO: [VRFC 10-311] analyzing module xfft_0_dpm__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_108
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_115
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_181
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_188
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_238
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_243
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_248
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_254
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_55
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl__parameterized0_107
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl__parameterized0_114
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl__parameterized0_180
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl__parameterized0_187
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl__parameterized0_54
+INFO: [VRFC 10-311] analyzing module xfft_0_input_negation
+INFO: [VRFC 10-311] analyzing module xfft_0_input_negation_128
+INFO: [VRFC 10-311] analyzing module xfft_0_input_negation_201
+INFO: [VRFC 10-311] analyzing module xfft_0_logic_gate__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_logic_gate__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_logic_gate__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized0_158
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized0_159
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized0_30
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized0_82
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized0_83
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized3_4
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bf
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bf__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bf__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bf_sp
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bf_sp__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bf_sp__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bf_sp__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bf_sp__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bfly_byp
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bfly_byp_208
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bfly_byp__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_cnt_ctrl
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_cnt_ctrl__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_cnt_ctrl__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_cnt_ctrl__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_cnt_ctrl__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_cnt_ctrl__parameterized4
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_cnt_ctrl__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_cnt_ctrl__parameterized6
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_delay_mux
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_delay_mux__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_delay_mux__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_delay_mux__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_delay_mux__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_delay_mux__parameterized4
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_flow_ctrl
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_memory
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_memory__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_memory__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_memory__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_pe
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_pe__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_pe__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_pe__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_srl_memory
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_srl_memory__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_tw_gen
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_tw_gen__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_tw_gen__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_twos_comp_mux
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_twos_comp_mux_165
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_twos_comp_mux_36
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_twos_comp_mux_89
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_twos_comp_mux__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_twos_comp_mux__parameterized0_164
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_twos_comp_mux__parameterized0_35
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_twos_comp_mux__parameterized0_88
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram_244
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized10
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized10_153
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized12
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized12_161
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized12_210
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized13
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized13_160
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized13_209
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized14
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized14_138
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized14_213
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized14_215
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized15
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized17
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized17_167
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized20
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized20_162
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized22
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized22_0
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized22_14
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized22_163
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized22_23
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized22_44
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized22_69
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized22_97
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized23
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized23_120
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized23_193
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized24
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized25
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized26
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized27
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized29
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized2_135
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized2_136
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized2_2
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized2_211
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized2_212
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized30
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized34
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized34_11
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized34_33
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized34_41
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized34_6
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized34_86
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized34_94
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized35
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized36
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized36_87
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized36_95
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized36_96
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized37
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized38
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized39
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized4
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized40
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized41
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized42
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized43
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized45
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized46
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized48
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized49
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized49_64
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized50
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized50_70
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized51
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized52
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized52_34
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized52_42
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized52_43
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized53
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized54
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized55
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized56
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized58
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized5_152
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized5_154
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized6
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized60
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized63
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized64
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized64_20
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized65
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized65_24
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized66
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized67
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized67_12
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized67_13
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized67_7
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized68
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized68_1
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized69
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized6_155
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized7
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized71
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized72
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized73
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized76
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized9
+INFO: [VRFC 10-311] analyzing module xfft_0_sub_byp
+INFO: [VRFC 10-311] analyzing module xfft_0_sub_byp_141
+INFO: [VRFC 10-311] analyzing module xfft_0_sub_byp_219
+INFO: [VRFC 10-311] analyzing module xfft_0_sub_byp_220
+INFO: [VRFC 10-311] analyzing module xfft_0_sub_byp__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_sub_byp__parameterized0_170
+INFO: [VRFC 10-311] analyzing module xfft_0_twgen_distmem
+INFO: [VRFC 10-311] analyzing module xfft_0_twgen_distmem__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_twgen_distmem__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_twiddle_gen
+INFO: [VRFC 10-311] analyzing module xfft_0_twiddle_gen__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_twiddle_gen__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_core
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_d
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2_137
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2_139
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2_214
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2_216
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2_22
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2_67
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2_68
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_10
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_166
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_168
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_37
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_38
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_39
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_40
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_8
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_9
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_90
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_91
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_92
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_93
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized1_21
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized1_65
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized1_66
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_viv
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized11
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized11_148
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized11_230
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized11_234
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized13
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized13_143
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized13_222
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized13_226
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized15
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized15_176
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized17
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized17_172
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized19
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized1_246
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized21
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized21_103
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized21_16
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized21_46
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized21_50
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized21_99
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized23
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized25
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized25_26
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized25_72
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized25_76
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized27
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9_110
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9_117
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9_183
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9_190
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9_240
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9_250
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9_256
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9_57
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized11
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized11_147
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized11_229
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized11_233
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized13
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized13_142
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized13_221
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized13_225
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized15
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized15_175
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized17
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized17_171
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized19
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized1_245
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized21
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized21_102
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized21_15
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized21_45
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized21_49
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized21_98
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized23
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized25
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized25_25
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized25_71
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized25_75
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized27
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9_109
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9_116
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9_182
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9_189
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9_239
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9_249
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9_255
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9_56
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized11
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized11_149
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized11_231
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized11_235
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized13
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized13_144
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized13_223
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized13_227
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized15
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized15_177
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized17
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized17_173
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized19
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized1_247
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized21
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized21_100
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized21_104
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized21_17
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized21_47
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized21_51
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized23
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized25
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized25_27
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized25_73
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized25_77
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized27
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9_111
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9_118
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9_184
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9_191
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9_241
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9_251
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9_257
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9_58
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized0__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized10
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized10__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized10__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized10__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized10__4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized10__5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized11
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized12
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized12__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized12__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized12__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized13
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4__4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4__5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4__6
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4__7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4__8
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized5__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized5__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized5__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized6
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized6__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized6__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized6__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized7__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized8
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized8__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized9
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv_112
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv_119
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv_185
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv_192
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv_242
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv_252
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv_258
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv_59
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized11
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized13
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized13_28
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized13_74
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized13_78
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized15
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_101
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_105
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_146
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_150
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_18
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_232
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_236
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_48
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_52
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized3_145
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized3_224
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized3_228
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized5_178
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized7_174
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized9
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp_132
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp_205
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp__parameterized0_131
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp__parameterized0_204
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp__parameterized1_129
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp__parameterized1_202
+INFO: [VRFC 10-311] analyzing module xfft_0_glb_ifx_master
+INFO: [VRFC 10-311] analyzing module xfft_0_glb_ifx_slave
+INFO: [VRFC 10-311] analyzing module xfft_0_glb_ifx_slave__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_glb_srl_fifo
+INFO: [VRFC 10-311] analyzing module xfft_0_glb_srl_fifo__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_glb_srl_fifo__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line_133
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line_206
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line__parameterized0_130
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line__parameterized0_134
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line__parameterized0_203
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line__parameterized0_207
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line__parameterized0_61
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sources_1/imports/rtl/abs_sq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module abs_sq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sources_1/imports/rtl/fft_naive_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_naive_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sources_1/imports/rtl/peak_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module peak_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sim_1/imports/sim/tb_fft_naive.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fft_naive
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.sim/sim_1/behav/xsim/glbl.v:6]
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:24 . Memory (MB): peak = 1511.832 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '24' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fft_naive_behav xil_defaultlib.tb_fft_naive xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fft_naive_behav xil_defaultlib.tb_fft_naive xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.FDSE_default
+Compiling module unisims_ver.SRL16E_default
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB18E1(DOA_REG=1,DOB_REG=1,RAM...
+Compiling module unisims_ver.DSP48E1(ACASCREG=2,ALUMODEREG=0,...
+Compiling module unisims_ver.DSP48E1(ALUMODEREG=0,BCASCREG=2,...
+Compiling module unisims_ver.RAM64X1S
+Compiling module unisims_ver.SRLC32E_default
+Compiling module xil_defaultlib.xfft_0
+Compiling module xil_defaultlib.abs_sq(OUT_WIDTH=25)
+Compiling module xil_defaultlib.peak_detector
+Compiling module xil_defaultlib.fft_naive_top_default
+Compiling module xil_defaultlib.tb_fft_naive
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fft_naive_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 1511.832 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '19' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_fft_naive_behav -key {Behavioral:sim_1:Functional:tb_fft_naive} -tclbatch {tb_fft_naive.tcl} -log {simulate.log} +MEM_DIR=C:/Users/USER/Documents/baryonic_space/baryonic_space-main/mem"
+INFO: [USF-XSim-8] Loading simulator feature
+ERROR: [Common 17-165] Too many positional options when parsing '+MEM_DIR=C:/Users/USER/Documents/baryonic_space/baryonic_space-main/mem', please type 'xsim -help' for usage info.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:43 . Memory (MB): peak = 1511.832 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property -name {xsim.simulate.xsim.more_options} -value {-testplusarg MEM_DIR=C:/Users/USER/Documents/baryonic_space/baryonic_space-main/mem} -objects [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_fft_naive'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_fft_naive' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_fft_naive_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fft_naive_behav xil_defaultlib.tb_fft_naive xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fft_naive_behav xil_defaultlib.tb_fft_naive xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_fft_naive_behav -key {Behavioral:sim_1:Functional:tb_fft_naive} -tclbatch {tb_fft_naive.tcl} -log {simulate.log} -testplusarg MEM_DIR=C:/Users/USER/Documents/baryonic_space/baryonic_space-main/mem"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_fft_naive.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: Simulation object /tb_fft_naive/mem_dir was not traceable in the design for the following reason:
+Vivado Simulator does not support tracing of System Verilog Dynamic Type object.
+# run 1000ns
+Using MEM_DIR=C:/Users/USER/Documents/baryonic_space/baryonic_space-main/mem
+[118000] Sending 12.5 MHz frame
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_fft_naive_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1652.188 ; gain = 33.094
+run all
+[3610000] 12.5 MHz peak bin = 80, expected around 16, power = 3686400
+Error: 12.5 MHz peak mismatch: got 80, expected 16
+Time: 3610 ns  Iteration: 0  Process: /tb_fft_naive/wait_for_peak  Scope: tb_fft_naive.wait_for_peak  File: C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sim_1/imports/sim/tb_fft_naive.sv Line: 157
+[3734000] Sending 10.0 MHz frame
+[7226000] 10.0 MHz peak bin = 42, expected around 13, power = 7243154
+Error: 10.0 MHz peak mismatch: got 42, expected 13
+Time: 7226 ns  Iteration: 0  Process: /tb_fft_naive/wait_for_peak  Scope: tb_fft_naive.wait_for_peak  File: C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sim_1/imports/sim/tb_fft_naive.sv Line: 157
+Naive FFT simulation finished.
+$finish called at time : 7430 ns : File "C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sim_1/imports/sim/tb_fft_naive.sv" Line 208
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USER\Documents\baryonic_space\baryonic_space-main\fpga_fft_project\fpga_fft_project.srcs\sim_1\imports\sim\tb_fft_naive.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USER\Documents\baryonic_space\baryonic_space-main\fpga_fft_project\fpga_fft_project.srcs\sources_1\imports\rtl\fft_naive_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USER\Documents\baryonic_space\baryonic_space-main\fpga_fft_project\fpga_fft_project.srcs\sim_1\imports\sim\tb_fft_naive.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USER\Documents\baryonic_space\baryonic_space-main\fpga_fft_project\fpga_fft_project.srcs\sim_1\imports\sim\tb_fft_naive.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USER\Documents\baryonic_space\baryonic_space-main\fpga_fft_project\fpga_fft_project.srcs\sim_1\imports\sim\tb_fft_naive.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USER\Documents\baryonic_space\baryonic_space-main\fpga_fft_project\fpga_fft_project.srcs\sources_1\imports\rtl\fft_naive_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USER\Documents\baryonic_space\baryonic_space-main\fpga_fft_project\fpga_fft_project.srcs\sources_1\imports\rtl\fft_naive_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\USER\Documents\baryonic_space\baryonic_space-main\fpga_fft_project\fpga_fft_project.srcs\sources_1\imports\rtl\fft_naive_top.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_fft_naive'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_fft_naive' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_fft_naive_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.gen/sources_1/ip/xfft_0/xfft_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xfft_0
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13
+INFO: [VRFC 10-311] analyzing module xfft_0_adder
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized0_31
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized0_32
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized0_5
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized0_84
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized0_85
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized2_19
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized2_62
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized2_63
+INFO: [VRFC 10-311] analyzing module xfft_0_adder__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_adder_bypass
+INFO: [VRFC 10-311] analyzing module xfft_0_adder_bypass_140
+INFO: [VRFC 10-311] analyzing module xfft_0_adder_bypass_217
+INFO: [VRFC 10-311] analyzing module xfft_0_adder_bypass_218
+INFO: [VRFC 10-311] analyzing module xfft_0_adder_bypass__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_adder_bypass__parameterized0_169
+INFO: [VRFC 10-311] analyzing module xfft_0_arith_shift3
+INFO: [VRFC 10-311] analyzing module xfft_0_arith_shift3_156
+INFO: [VRFC 10-311] analyzing module xfft_0_arith_shift3_157
+INFO: [VRFC 10-311] analyzing module xfft_0_arith_shift3_29
+INFO: [VRFC 10-311] analyzing module xfft_0_arith_shift3_80
+INFO: [VRFC 10-311] analyzing module xfft_0_arith_shift3_81
+INFO: [VRFC 10-311] analyzing module xfft_0_arith_shift3__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_arith_shift3__parameterized0_3
+INFO: [VRFC 10-311] analyzing module xfft_0_axi_wrapper
+INFO: [VRFC 10-311] analyzing module xfft_0_axi_wrapper_input_fifo
+INFO: [VRFC 10-311] analyzing module xfft_0_axi_wrapper_input_fifo__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_axi_wrapper_output_fifo
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized10
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized11
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized12
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized13
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized14
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized15
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized16
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized17
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized18
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized1__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized1__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized1__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized20
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized21
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized22
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized23
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized2__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized2__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__10
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__11
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__6
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__8
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized4__9
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized6
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_legacy__parameterized8
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized10
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized11
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized12
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized13
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized14
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized15
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized16
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized17
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized18
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized1__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized1__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized1__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized20
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized21
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized22
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized23
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized24
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized25
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized2__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized2__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__10
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__6
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__8
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized4__9
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized6
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_shift_ram_v12_0_18_viv__parameterized8
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_151
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_122
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_195
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult_125
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult_198
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult__parameterized0_126
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult__parameterized0_199
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult__parameterized1_127
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_3_dsp48_mult__parameterized1_200
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_79
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_delay_line__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_delay_line__parameterized1_123
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_delay_line__parameterized1_124
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_delay_line__parameterized1_196
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_delay_line__parameterized1_197
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_delay_line__parameterized1_60
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_synth
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_synth_121
+INFO: [VRFC 10-311] analyzing module xfft_0_cmpy_v6_0_25_synth_194
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_sat
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_sat__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_sat__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_sat__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_sat__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_sat__parameterized4
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a__parameterized0_106
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a__parameterized0_113
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a__parameterized0_179
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a__parameterized0_186
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a__parameterized0_237
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a__parameterized0_253
+INFO: [VRFC 10-311] analyzing module xfft_0_cnt_tc_rtl_a__parameterized0_53
+INFO: [VRFC 10-311] analyzing module xfft_0_dpm
+INFO: [VRFC 10-311] analyzing module xfft_0_dpm__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_108
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_115
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_181
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_188
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_238
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_243
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_248
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_254
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl_55
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl__parameterized0_107
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl__parameterized0_114
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl__parameterized0_180
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl__parameterized0_187
+INFO: [VRFC 10-311] analyzing module xfft_0_equ_rtl__parameterized0_54
+INFO: [VRFC 10-311] analyzing module xfft_0_input_negation
+INFO: [VRFC 10-311] analyzing module xfft_0_input_negation_128
+INFO: [VRFC 10-311] analyzing module xfft_0_input_negation_201
+INFO: [VRFC 10-311] analyzing module xfft_0_logic_gate__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_logic_gate__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_logic_gate__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized0_158
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized0_159
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized0_30
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized0_82
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized0_83
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_mux_bus4__parameterized3_4
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bf
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bf__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bf__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bf_sp
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bf_sp__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bf_sp__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bf_sp__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bf_sp__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bfly_byp
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bfly_byp_208
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_bfly_byp__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_cnt_ctrl
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_cnt_ctrl__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_cnt_ctrl__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_cnt_ctrl__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_cnt_ctrl__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_cnt_ctrl__parameterized4
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_cnt_ctrl__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_cnt_ctrl__parameterized6
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_delay_mux
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_delay_mux__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_delay_mux__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_delay_mux__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_delay_mux__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_delay_mux__parameterized4
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_flow_ctrl
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_memory
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_memory__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_memory__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_memory__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_pe
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_pe__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_pe__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_pe__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_srl_memory
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_srl_memory__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_tw_gen
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_tw_gen__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_tw_gen__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_twos_comp_mux
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_twos_comp_mux_165
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_twos_comp_mux_36
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_twos_comp_mux_89
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_twos_comp_mux__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_twos_comp_mux__parameterized0_164
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_twos_comp_mux__parameterized0_35
+INFO: [VRFC 10-311] analyzing module xfft_0_r22_twos_comp_mux__parameterized0_88
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram_244
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized10
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized10_153
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized12
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized12_161
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized12_210
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized13
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized13_160
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized13_209
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized14
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized14_138
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized14_213
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized14_215
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized15
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized17
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized17_167
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized20
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized20_162
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized22
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized22_0
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized22_14
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized22_163
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized22_23
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized22_44
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized22_69
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized22_97
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized23
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized23_120
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized23_193
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized24
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized25
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized26
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized27
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized29
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized2_135
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized2_136
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized2_2
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized2_211
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized2_212
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized30
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized34
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized34_11
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized34_33
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized34_41
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized34_6
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized34_86
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized34_94
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized35
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized36
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized36_87
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized36_95
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized36_96
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized37
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized38
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized39
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized4
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized40
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized41
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized42
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized43
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized45
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized46
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized48
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized49
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized49_64
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized50
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized50_70
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized51
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized52
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized52_34
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized52_42
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized52_43
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized53
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized54
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized55
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized56
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized58
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized5_152
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized5_154
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized6
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized60
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized63
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized64
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized64_20
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized65
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized65_24
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized66
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized67
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized67_12
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized67_13
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized67_7
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized68
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized68_1
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized69
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized6_155
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized7
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized71
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized72
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized73
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized76
+INFO: [VRFC 10-311] analyzing module xfft_0_shift_ram__parameterized9
+INFO: [VRFC 10-311] analyzing module xfft_0_sub_byp
+INFO: [VRFC 10-311] analyzing module xfft_0_sub_byp_141
+INFO: [VRFC 10-311] analyzing module xfft_0_sub_byp_219
+INFO: [VRFC 10-311] analyzing module xfft_0_sub_byp_220
+INFO: [VRFC 10-311] analyzing module xfft_0_sub_byp__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_sub_byp__parameterized0_170
+INFO: [VRFC 10-311] analyzing module xfft_0_twgen_distmem
+INFO: [VRFC 10-311] analyzing module xfft_0_twgen_distmem__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_twgen_distmem__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_twiddle_gen
+INFO: [VRFC 10-311] analyzing module xfft_0_twiddle_gen__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_twiddle_gen__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_core
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_d
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2_137
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2_139
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2_214
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2_216
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2_22
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2_67
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2_68
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_10
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_166
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_168
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_37
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_38
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_39
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_40
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_8
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_9
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_90
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_91
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_92
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized0_93
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized1_21
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized1_65
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_mux_bus2__parameterized1_66
+INFO: [VRFC 10-311] analyzing module xfft_0_xfft_v9_1_13_viv
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized11
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized11_148
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized11_230
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized11_234
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized13
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized13_143
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized13_222
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized13_226
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized15
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized15_176
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized17
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized17_172
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized19
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized1_246
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized21
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized21_103
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized21_16
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized21_46
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized21_50
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized21_99
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized23
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized25
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized25_26
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized25_72
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized25_76
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized27
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9_110
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9_117
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9_183
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9_190
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9_240
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9_250
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9_256
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_fabric_legacy__parameterized9_57
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized11
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized11_147
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized11_229
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized11_233
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized13
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized13_142
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized13_221
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized13_225
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized15
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized15_175
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized17
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized17_171
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized19
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized1_245
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized21
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized21_102
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized21_15
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized21_45
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized21_49
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized21_98
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized23
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized25
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized25_25
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized25_71
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized25_75
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized27
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9_109
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9_116
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9_182
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9_189
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9_239
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9_249
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9_255
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_legacy__parameterized9_56
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized11
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized11_149
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized11_231
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized11_235
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized13
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized13_144
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized13_223
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized13_227
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized15
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized15_177
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized17
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized17_173
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized19
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized1_247
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized21
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized21_100
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized21_104
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized21_17
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized21_47
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized21_51
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized23
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized25
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized25_27
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized25_73
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized25_77
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized27
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9_111
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9_118
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9_184
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9_191
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9_241
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9_251
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9_257
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_lut6_legacy__parameterized9_58
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized0__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized10
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized10__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized10__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized10__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized10__4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized10__5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized11
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized12
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized12__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized12__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized12__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized13
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4__4
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4__5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4__6
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4__7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized4__8
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized5__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized5__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized5__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized6
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized6__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized6__2
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized6__3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized7__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized8
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized8__1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_addsub_v12_0_19_viv__parameterized9
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv_112
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv_119
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv_185
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv_192
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv_242
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv_252
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv_258
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv_59
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized11
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized13
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized13_28
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized13_74
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized13_78
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized15
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_101
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_105
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_146
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_150
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_18
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_232
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_236
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_48
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized1_52
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized3_145
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized3_224
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized3_228
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized5
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized5_178
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized7
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized7_174
+INFO: [VRFC 10-311] analyzing module xfft_0_c_reg_fd_v12_0_10_viv__parameterized9
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp_132
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp_205
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp__parameterized0_131
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp__parameterized0_204
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp__parameterized1_129
+INFO: [VRFC 10-311] analyzing module xfft_0_dsp__parameterized1_202
+INFO: [VRFC 10-311] analyzing module xfft_0_glb_ifx_master
+INFO: [VRFC 10-311] analyzing module xfft_0_glb_ifx_slave
+INFO: [VRFC 10-311] analyzing module xfft_0_glb_ifx_slave__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_glb_srl_fifo
+INFO: [VRFC 10-311] analyzing module xfft_0_glb_srl_fifo__parameterized1
+INFO: [VRFC 10-311] analyzing module xfft_0_glb_srl_fifo__parameterized3
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line_133
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line_206
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line__parameterized0
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line__parameterized0_130
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line__parameterized0_134
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line__parameterized0_203
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line__parameterized0_207
+INFO: [VRFC 10-311] analyzing module xfft_0_mult_gen_v12_0_22_delay_line__parameterized0_61
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sources_1/imports/rtl/abs_sq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module abs_sq
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sources_1/imports/rtl/fft_naive_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_naive_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sources_1/imports/rtl/peak_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module peak_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sim_1/imports/sim/tb_fft_naive.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_fft_naive
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 2646.695 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '24' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fft_naive_behav xil_defaultlib.tb_fft_naive xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fft_naive_behav xil_defaultlib.tb_fft_naive xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.FDSE_default
+Compiling module unisims_ver.SRL16E_default
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.RB18_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB18E1(DOA_REG=1,DOB_REG=1,RAM...
+Compiling module unisims_ver.DSP48E1(ACASCREG=2,ALUMODEREG=0,...
+Compiling module unisims_ver.DSP48E1(ALUMODEREG=0,BCASCREG=2,...
+Compiling module unisims_ver.RAM64X1S
+Compiling module unisims_ver.SRLC32E_default
+Compiling module xil_defaultlib.xfft_0
+Compiling module xil_defaultlib.abs_sq(OUT_WIDTH=25)
+Compiling module xil_defaultlib.peak_detector
+Compiling module xil_defaultlib.fft_naive_top_default
+Compiling module xil_defaultlib.tb_fft_naive
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_fft_naive_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 2646.695 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '19' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_fft_naive_behav -key {Behavioral:sim_1:Functional:tb_fft_naive} -tclbatch {tb_fft_naive.tcl} -log {simulate.log} -testplusarg MEM_DIR=C:/Users/USER/Documents/baryonic_space/baryonic_space-main/mem"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_fft_naive.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: Simulation object /tb_fft_naive/mem_dir was not traceable in the design for the following reason:
+Vivado Simulator does not support tracing of System Verilog Dynamic Type object.
+# run 1000ns
+Using MEM_DIR=C:/Users/USER/Documents/baryonic_space/baryonic_space-main/mem
+[118000] Sending 12.5 MHz frame
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_fft_naive_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:45 . Memory (MB): peak = 2646.695 ; gain = 0.000
+run all
+[3610000] 12.5 MHz peak bin = 16, expected around 16, power = 3392965
+[3734000] Sending 10.0 MHz frame
+[7226000] 10.0 MHz peak bin = 13, expected around 13, power = 2968146
+Naive FFT simulation finished.
+$finish called at time : 7430 ns : File "C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sim_1/imports/sim/tb_fft_naive.sv" Line 208
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May  1 18:02:30 2026...

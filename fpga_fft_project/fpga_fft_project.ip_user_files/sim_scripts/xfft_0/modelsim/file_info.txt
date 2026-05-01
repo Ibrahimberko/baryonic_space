@@ -1,0 +1,3 @@
+xpm_memory.sv,systemverilog,xpm,../../../../../../../../../../Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xfft_0_sim_netlist.v,verilog,xil_defaultlib,../../../../fpga_fft_project.gen/sources_1/ip/xfft_0/xfft_0_sim_netlist.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

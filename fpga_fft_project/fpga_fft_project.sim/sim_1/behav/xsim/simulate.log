@@ -1,0 +1,8 @@
+Time resolution is 1 ps
+Using MEM_DIR=C:/Users/USER/Documents/baryonic_space/baryonic_space-main/mem
+[118000] Sending 12.5 MHz frame
+[3610000] 12.5 MHz peak bin = 16, expected around 16, power = 3392965
+[3734000] Sending 10.0 MHz frame
+[7226000] 10.0 MHz peak bin = 13, expected around 13, power = 2968146
+Naive FFT simulation finished.
+$finish called at time : 7430 ns : File "C:/Users/USER/Documents/baryonic_space/baryonic_space-main/fpga_fft_project/fpga_fft_project.srcs/sim_1/imports/sim/tb_fft_naive.sv" Line 208
