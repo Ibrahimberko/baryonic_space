@@ -4,6 +4,169 @@ Bu rehber, Vitis 2024.2 Unified IDE'de mevcut platform üzerine yeni bir
 C uygulaması nasıl oluşturulur, derlenir ve Zybo Z7-20'de RealTerm'den
 çıktısı nasıl izlenir gösterir.
 
+
+Karta bağladığın varsayımıyla, Vitis 2024.2'de sıfırdan başlayan tam adım listesi:
+
+## 0. Önkoşul — Donanım Hazır mı?
+
+**Önce bunu yap, atlama:**
+
+1. Kart kapalıyken: **JP5 → JTAG**, **JP6 → USB**.
+2. Micro-USB kabloyu **PROG/UART** portuna tak (HDMI/USB-OTG değil).
+3. **SW4 = ON**. Kırmızı PWR LED yanmalı, DONE LED **sönük**.
+4. PC'de **Aygıt Yöneticisi → Ports (COM & LPT)** altında "Silicon Labs CP210x USB to UART Bridge (COMxx)" görünmeli. **COM numarasını not et** (örn. COM7).
+   - Görünmüyorsa: Silicon Labs CP210x VCP driver'ı kur, USB'yi tekrar tak.
+5. Vivado Cable Drivers kurulu mu test et: Vivado **Hardware Manager → Open Target** menüsünde "Auto Connect" yapıp Zybo'yu görüyorsa kurulu. Görmüyorsa `<Vivado>\data\xicom\cable_drivers\nt64\install_drivers\install_drivers.bat`'ı **yönetici** olarak çalıştır.
+
+## 1. Vitis'i Aç ve Workspace Seç
+
+6. **Start menüsü → Vitis IDE 2024.2**'i aç.
+7. İlk açılışta workspace soracak. **XSA klasörünün dışında** bir yer ver:
+   ```
+   C:\Vitis_workspaces\baryonic_part4
+   ```
+   (Klasör yoksa Vitis oluşturur.) **Launch** tıkla.
+8. Welcome ekranı kapat (sol üstte X).
+
+## 2. Platform Component Oluştur
+
+9. Sol panelde **Vitis Components** sekmesine geç.
+10. Mavi **+ → Create Platform Component** tıkla.
+
+    *(Veya File → New Component → Platform.)*
+11. Açılan wizard:
+    - **Name:** `fft_pl_ps_platform`
+    - **Component location:** workspace içinde default kalsın.
+    - **Next**.
+12. **Hardware Design** sayfası:
+    - **Hardware Design (XSA):** **Browse** → şunu seç:
+      ```
+      C:\Users\USER\Documents\baryonic_space\baryonic_space-main\part4\vivado_part4_zynq\fft_pl_ps_part4_zynq.xsa
+      ```
+    - **Next**.
+13. **Operating System / Processor** sayfası:
+    - **Operating System:** `standalone`
+    - **Processor:** `ps7_cortexa9_0`
+    - **Next** → **Finish**.
+14. Platform component açılır (ortada özet sayfa görürsün).
+15. Sol üst **Build** butonu (çekiç ikonu) → 1–2 dakika bekle. Konsolda hata olmamalı, **"Build Finished"** görmelisin.
+
+## 3. Application Component Oluştur
+
+16. Tekrar **Vitis Components** sekmesi → mavi **+ → Create Application Component**.
+17. Wizard:
+    - **Name:** `dds_fft_test_app`
+    - **Next**.
+18. **Platform** seçimi:
+    - **Select a platform from repository** sekmesinde `fft_pl_ps_platform` görünür (az önce build ettiğin). Seç → **Next**.
+19. **Domain** seçimi:
+    - **Domain:** `standalone_ps7_cortexa9_0`
+    - **Next**.
+20. **Templates** sayfası:
+    - **Empty Application (C)** seç (Hello World değil).
+    - **Finish**.
+21. Application component açılır.
+
+## 4. C Dosyasını Application'a Ekle
+
+22. Sol panelde Vitis Components ağacında app'i genişlet:
+    ```
+    dds_fft_test_app
+    └── src
+    ```
+23. **Windows Explorer aç**, şu dosyayı kopyala:
+    ```
+    C:\Users\USER\Documents\baryonic_space\baryonic_space-main\software\part4\vitis_baremetal_dds_fft_test.c
+    ```
+24. Vitis'te `dds_fft_test_app/src` klasörüne **sağ tık → Paste** (veya Explorer'dan sürükle-bırak).
+25. Dosya `src/` altında görünmeli. Üzerine çift tıkla, açılsın — kod editöründe görünmeli.
+
+## 5. Application'ı Build Et
+
+26. Application component sayfası aktifken sol üstteki **Build** (çekiç) tıkla.
+27. Konsolda derleme satırlarını gör. Hata yoksa şu satırı görmelisin:
+    ```
+    Finished building target: dds_fft_test_app.elf
+    ```
+
+> Compile error alırsan: muhtemelen `xil_io.h`/`sleep.h` bulunamıyor anlamına gelir; bu durumda platform doğru build edilmemiş olabilir. Adım 15'e dön.
+
+## 6. UART Terminalini Aç (İndirmeden Önce)
+
+İlk satırları kaçırmamak için terminali şimdi açıyoruz.
+
+28. Vitis menüden: **Window → Show View → Vitis Serial Terminal** (yoksa: **Window → Show View → Other → Terminal → Terminal**).
+29. Açılan terminal panelinde **+ (yeni bağlantı)** ikonuna tıkla:
+    - **Connection type:** Serial Terminal
+    - **Serial Port:** Aygıt Yöneticisi'nde gördüğün COM (örn. COM7)
+    - **Baud Rate:** **115200**
+    - **Data bits:** 8, **Stop bits:** 1, **Parity:** None, **Flow control:** None
+    - **OK**.
+30. Terminal "Connected" duruma geçer. Bekleyen ekran boştur, normal.
+
+## 7. Karta Programla ve Çalıştır
+
+31. Sol panelde **dds_fft_test_app** üstüne sağ tık.
+32. **Run → Run on Hardware** seç (gerekirse alt menüde **Run As → Single Application Debug** yerine **Launch on Hardware**).
+
+    Vitis sırayla:
+    - JTAG üzerinden Zybo'ya bağlanır.
+    - **PL'ye bitstream'i indirir** → Zybo'da **DONE LED yanar**.
+    - PS init (DDR, MIO, FCLK kurulumu).
+    - `dds_fft_test_app.elf`'i DDR'a yükler.
+    - A9 core'unu reset edip kullanıcı kodundan başlatır.
+
+33. Birkaç saniye sonra **UART terminalinde** şu çıktıyı gör:
+
+```
+Part 4 Vitis bare-metal DDS/FFT test
+Base address: 0x43c00000
+Frequency resolution: 781.25 kHz
+
+Target PINC=0x0ccccccd, peak_idx=13, peak_value=...
+PASS: test 0 within one FFT bin
+Target PINC=0x10000000, peak_idx=16, peak_value=...
+PASS: test 1 within one FFT bin
+Target PINC=0x20000000, peak_idx=32, peak_value=...
+PASS: test 2 within one FFT bin
+Target PINC=0x40000000, peak_idx=64, peak_value=...
+PASS: test 3 within one FFT bin
+
+All Part 4 bare-metal tests PASSED
+```
+
+## 8. Yeniden Çalıştırma
+
+34. Kodu değiştirdiysen → **Build** (çekiç) → **Run on Hardware**. Bitstream zaten PL'de, sadece ELF tekrar yüklenir, daha hızlı.
+35. Bitstream'i değiştirdiysen (Vivado'da yeni `.bit`/`.xsa`) → **platform component**'a dön → sağ tık `fft_pl_ps_platform` → **Update Hardware Specification** → yeni XSA'yı göster → **Build** → sonra app'i **Build** → **Run on Hardware**.
+
+## Sorun Giderme (sık karşılaşılanlar)
+
+| Belirti | Olası neden | Düzeltme |
+| --- | --- | --- |
+| "Cannot connect to target" / "Error connecting to JTAG cable" | JP5 JTAG'da değil veya başka bir Vivado oturumu kabloyu tutuyor | JP5 = JTAG, varsa Vivado HW Manager'ı kapat, USB'yi tekrar tak |
+| "No cable detected" | Cable driver yok | `install_drivers.bat`'ı yönetici olarak çalıştır |
+| Run başarılı ama UART boş | Yanlış COM, yanlış baud, CP210x yok | Aygıt Yöneticisi'nden COM doğrula, 115200 8N1, CP210x kurulu mu |
+| UART karakterler bozuk | Baud yanlış (örn. 9600) | 115200 yap |
+| `FAIL: peak_valid timeout` | DDS config tready/tvalid handshake takıldı | RTL fix doğru mu kontrol et, yeni XSA üretildi mi |
+| `FAIL: target test N outside FFT resolution` ya da `peak_idx >= 128` | DDS sine/cosine lane'leri ters | `fft_pl_ps_top.v`'de `dds_re`/`dds_im` swap, re-build, yeni XSA, platform Update Hardware Spec, app rebuild |
+| "elf not found" Run sırasında | App build edilmemiş | Adım 26'ya dön, çekiç tıkla |
+
+## Hızlı Özet
+
+| # | Eylem | Yer |
+| --- | --- | --- |
+| 1 | JP5=JTAG, JP6=USB, kablo, SW4=ON | Donanım |
+| 2 | Vitis aç, workspace seç | Vitis |
+| 3 | Create Platform Component → XSA seç → Build | Vitis |
+| 4 | Create Application Component → Empty C | Vitis |
+| 5 | C dosyasını `src/`'e kopyala | Vitis |
+| 6 | App build (çekiç) | Vitis |
+| 7 | Serial Terminal aç (COMx, 115200) | Vitis |
+| 8 | App üstüne sağ tık → Run on Hardware | Vitis |
+| 9 | UART'ta PASS satırlarını oku | Terminal |
+
+Bunları takip edersen ilk denemede sonuca varmalısın. Bir adımda takılırsan ekran görüntüsü ya da hata mesajını yapıştır, oradan ilerleriz.
 ---
 
 ## Önkoşullar (Bir Kerelik)

@@ -120,3 +120,433 @@ Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // TclEventType: DEBUG_PROBE_SET_CHANGE
 // TclEventType: FLOW_ADDED
 // Tcl Message: open_project C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part1/vivado_part1/fft_naive_part1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 997 MB. GUI used memory: 70 MB. Current time: 5/6/26, 7:44:51 PM TRT
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 118 MB (+310kb) [00:00:11]
+// [Engine Memory]: 1,042 MB (+248651kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  1298 ms.
+// Tcl Message: open_project C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part1/vivado_part1/fft_naive_part1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'. 
+// Project name: fft_naive_part1; location: C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part1/vivado_part1; part: xc7z020clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1366.723 ; gain = 258.363 
+dismissDialog("Open Project"); // bh (Open Project Progress)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 4, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_fft_naive (tb_fft_naive.sv)]", 5, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_fft_naive (tb_fft_naive.sv)]", 5, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("tb_fft_naive.sv", 273, 233); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 273, 233); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 273, 233, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("tb_fft_naive.sv", 204, 281); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 205, 281, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+selectCodeEditor("tb_fft_naive.sv", 345, 286); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 345, 286, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+selectCodeEditor("tb_fft_naive.sv", 200, 288); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 200, 288, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+// [Engine Memory]: 1,114 MB (+20802kb) [00:04:32]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 85 MB. Current time: 5/6/26, 7:49:16 PM TRT
+// Elapsed time: 244 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_fft_naive (tb_fft_naive.sv), dut : fft_naive_top (fft_naive_top.v)]", 6, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// [GUI Memory]: 146 MB (+23437kb) [00:04:48]
+selectCodeEditor("fft_naive_top.v", 132, 353); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 132, 353, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 185, 372); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 185, 372, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 359, 367); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 359, 367, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+// [GUI Memory]: 161 MB (+8512kb) [00:08:00]
+// Elapsed time: 462 seconds
+selectCodeEditor("fft_naive_top.v", 315, 294); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 315, 295, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 141, 180); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 141, 180, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 221, 181); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 221, 181, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 235, 269); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 235, 269, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 253, 248); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 253, 248, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 255, 273); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 255, 273, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 254, 269); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 253, 269); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 253, 268); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 253, 268, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 253, 235); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 253, 235, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 124, 223); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 124, 223, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 202, 312); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 202, 312, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 211, 329); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 211, 330, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 216, 317); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 216, 317, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 294, 338); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 212, 350); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 212, 350, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+// Elapsed time: 169 seconds
+selectCodeEditor("fft_naive_top.v", 314, 246); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 314, 246, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 258, 238); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 258, 238, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("fft_naive_top.v", 248, 232); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 248, 232, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 240, 229); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 240, 229, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 260, 219); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 260, 219, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 265, 234); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 265, 234, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 252, 219); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 252, 219, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 221, 362); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 221, 362, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 299, 311); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 299, 311, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 288, 203); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 143, 183); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 143, 183, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 253, 227); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 253, 227, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 162, 145); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 162, 145, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 321, 141); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 321, 141, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+// Elapsed time: 22 seconds
+selectCodeEditor("fft_naive_top.v", 277, 274); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 276, 274, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 277, 263); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 277, 263, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 173, 433); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 173, 433, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fft_naive.sv", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 23 seconds
+selectCodeEditor("tb_fft_naive.sv", 158, 214); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 158, 214, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+selectCodeEditor("tb_fft_naive.sv", 146, 231); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 146, 231, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_naive_top.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("fft_naive_top.v", 263, 279); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 115, 246); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 115, 246, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 111, 95); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 111, 95, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+// Elapsed time: 217 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fft_naive.sv", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("tb_fft_naive.sv", 404, 215); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 404, 215, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+selectCodeEditor("tb_fft_naive.sv", 479, 216); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 162, 212); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 162, 212, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+selectCodeEditor("tb_fft_naive.sv", 92, 207); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 92, 207, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+// Elapsed time: 21 seconds
+selectCodeEditor("tb_fft_naive.sv", 185, 329); // ae (tb_fft_naive.sv)
+// Elapsed time: 68 seconds
+selectCodeEditor("tb_fft_naive.sv", 95, 366); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 94, 366, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("tb_fft_naive.sv", 155, 349); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 155, 349, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+// Elapsed time: 282 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_naive_top.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 86 MB. Current time: 5/6/26, 8:19:17 PM TRT
+// Elapsed time: 838 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fft_naive.sv", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v), u_abs_sq : abs_sq (abs_sq.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v), u_peak_detector : peak_detector (peak_detector.v)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v), u_peak_detector : peak_detector (peak_detector.v)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v), u_abs_sq : abs_sq (abs_sq.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v), u_abs_sq : abs_sq (abs_sq.v)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v), u_peak_detector : peak_detector (peak_detector.v)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v), u_peak_detector : peak_detector (peak_detector.v)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v), u_peak_detector : peak_detector (peak_detector.v)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v), u_peak_detector : peak_detector (peak_detector.v)]", 4, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v), u_peak_detector : peak_detector (peak_detector.v)]", 4, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("peak_detector.v", 274, 143); // ae (peak_detector.v)
+selectCodeEditor("peak_detector.v", 274, 143, false, false, false, false, true); // ae (peak_detector.v) - Double Click
+selectCodeEditor("peak_detector.v", 269, 194); // ae (peak_detector.v)
+selectCodeEditor("peak_detector.v", 269, 194, false, false, false, false, true); // ae (peak_detector.v) - Double Click
+selectCodeEditor("peak_detector.v", 228, 78); // ae (peak_detector.v)
+selectCodeEditor("peak_detector.v", 228, 78, false, false, false, false, true); // ae (peak_detector.v) - Double Click
+selectCodeEditor("peak_detector.v", 197, 153); // ae (peak_detector.v)
+selectCodeEditor("peak_detector.v", 197, 153, false, false, false, false, true); // ae (peak_detector.v) - Double Click
+selectCodeEditor("peak_detector.v", 197, 144); // ae (peak_detector.v)
+selectCodeEditor("peak_detector.v", 197, 144, false, false, false, false, true); // ae (peak_detector.v) - Double Click
+selectCodeEditor("peak_detector.v", 184, 248); // ae (peak_detector.v)
+selectCodeEditor("peak_detector.v", 184, 248, false, false, false, false, true); // ae (peak_detector.v) - Double Click
+selectCodeEditor("peak_detector.v", 183, 262); // ae (peak_detector.v)
+selectCodeEditor("peak_detector.v", 183, 262, false, false, false, false, true); // ae (peak_detector.v) - Double Click
+// Elapsed time: 75 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v), u_abs_sq : abs_sq (abs_sq.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v), u_abs_sq : abs_sq (abs_sq.v)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("abs_sq.v", 301, 198); // ae (abs_sq.v)
+selectCodeEditor("abs_sq.v", 301, 198, false, false, false, false, true); // ae (abs_sq.v) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("fft_naive_top.v", 332, 311); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 332, 311, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 248, 144); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 248, 144, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("fft_naive_top.v", 267, 148); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 267, 148, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 274, 159); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 274, 159, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 279, 178); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 279, 178, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("fft_naive_top.v", 256, 152); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 285, 149); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 285, 149, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 278, 172); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 276, 150); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 276, 150, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 274, 167); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 274, 167, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 275, 184); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 275, 184, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 275, 200); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 275, 200, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 268, 212); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 268, 212, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 272, 148); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 272, 148, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 231, 178); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 231, 178, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("fft_naive_top.v", 186, 233); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 186, 233, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 170, 355); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 170, 355, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 265, 253); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 267, 266); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 267, 266, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 337, 268); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 337, 268, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 273, 267); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 273, 267, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 169, 404); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 169, 403, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 180, 425); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 179, 416); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 179, 416, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 198, 332); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 198, 332, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 324, 335); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 324, 335, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 221, 335); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 221, 335, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("fft_naive_top.v", 132, 201); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 132, 201, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "peak_detector.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("peak_detector.v", 161, 96); // ae (peak_detector.v)
+selectCodeEditor("peak_detector.v", 161, 96, false, false, false, false, true); // ae (peak_detector.v) - Double Click
+selectCodeEditor("peak_detector.v", 161, 96); // ae (peak_detector.v)
+selectCodeEditor("peak_detector.v", 161, 108); // ae (peak_detector.v)
+selectCodeEditor("peak_detector.v", 161, 108, false, false, false, false, true); // ae (peak_detector.v) - Double Click
+selectCodeEditor("peak_detector.v", 196, 397); // ae (peak_detector.v)
+selectCodeEditor("peak_detector.v", 196, 397, false, false, false, false, true); // ae (peak_detector.v) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_naive_top.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("fft_naive_top.v", 764, 319); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 627, 326); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 765, 336); // ae (fft_naive_top.v)
+typeControlKey((HResource) null, "fft_naive_top.v", 'c'); // ae (fft_naive_top.v)
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "peak_detector.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("peak_detector.v", 260, 96); // ae (peak_detector.v)
+typeControlKey((HResource) null, "peak_detector.v", 'c'); // ae (peak_detector.v)
+// Elapsed time: 136 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_naive_top.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("fft_naive_top.v", 378, 261); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 252, 218); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 252, 218, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 219, 335); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 219, 335, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 322, 338); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 322, 338, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 218, 339); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 218, 339, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 214, 317); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 214, 317, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "peak_detector.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("peak_detector.v", 294, 246); // ae (peak_detector.v)
+selectCodeEditor("peak_detector.v", 294, 246, false, false, false, false, true); // ae (peak_detector.v) - Double Click
+// Elapsed time: 56 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fft_naive.sv", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// [GUI Memory]: 171 MB (+1674kb) [00:51:12]
+// Elapsed time: 17 seconds
+selectCodeEditor("tb_fft_naive.sv", 110, 365); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 115, 350); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 115, 350, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+selectCodeEditor("tb_fft_naive.sv", 117, 375); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 117, 375, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+selectCodeEditor("tb_fft_naive.sv", 118, 369); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 118, 369, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+selectCodeEditor("tb_fft_naive.sv", 118, 385); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 118, 385, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+selectCodeEditor("tb_fft_naive.sv", 123, 354); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 123, 354, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+// Elapsed time: 194 seconds
+selectCodeEditor("tb_fft_naive.sv", 158, 214); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 158, 214, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+selectCodeEditor("tb_fft_naive.sv", 259, 248); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 259, 248, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+selectCodeEditor("tb_fft_naive.sv", 229, 267); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 229, 267, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+selectCodeEditor("tb_fft_naive.sv", 224, 286); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 224, 286, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+selectCodeEditor("tb_fft_naive.sv", 137, 259); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 137, 259, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("tb_fft_naive.sv", 146, 248); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 146, 248, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+// Elapsed time: 24 seconds
+selectCodeEditor("tb_fft_naive.sv", 121, 313); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 121, 313, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+selectCodeEditor("tb_fft_naive.sv", 298, 329); // ae (tb_fft_naive.sv)
+// Elapsed time: 22 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "while"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+selectCodeEditor("tb_fft_naive.sv", 332, 183); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 332, 183, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_naive_top.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("fft_naive_top.v", 308, 289); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 308, 289, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 314, 284); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 314, 284, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 220, 392); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 227, 386); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 227, 386, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 332, 380); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 332, 380, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 247, 373); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 247, 373, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 251, 394); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 253, 390, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 253, 390); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 253, 387); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 253, 387, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fft_naive.sv", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("tb_fft_naive.sv", 166, 286); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 166, 286, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+selectCodeEditor("tb_fft_naive.sv", 166, 300); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 166, 300, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("tb_fft_naive.sv", 222, 166); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 222, 166, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_naive_top.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fft_naive.sv", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 64 seconds
+selectCodeEditor("tb_fft_naive.sv", 144, 148); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 143, 148, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+// Elapsed time: 317 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_naive_top.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "peak_detector.v", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_naive_top (fft_naive_top.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("fft_naive_top.v", 304, 106); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 304, 106, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 227, 266); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 227, 266, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+// Elapsed time: 22 seconds
+selectCodeEditor("fft_naive_top.v", 126, 96); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 126, 96, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("fft_naive_top.v", 118, 200); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 118, 200, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 232, 207); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 232, 207, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 336, 218); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 336, 218, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 164, 195); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 164, 195, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 279, 197); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 279, 197, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 89 MB. Current time: 5/6/26, 8:49:19 PM TRT
+selectCodeEditor("fft_naive_top.v", 172, 349); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 172, 349, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 256, 349); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 256, 349, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 140, 133); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 140, 133, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 248, 363); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 248, 363, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+// Elapsed time: 46 seconds
+selectCodeEditor("fft_naive_top.v", 118, 167); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 118, 167, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 213, 166); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 213, 166, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 110, 164); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 110, 164, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fft_naive.sv", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("tb_fft_naive.sv", 71, 223); // ae (tb_fft_naive.sv)
+selectCodeEditor("tb_fft_naive.sv", 71, 223, false, false, false, false, true); // ae (tb_fft_naive.sv) - Double Click
+// Elapsed time: 588 seconds
+selectCodeEditor("tb_fft_naive.sv", 504, 375); // ae (tb_fft_naive.sv)
+// WARNING: HEventQueue.dispatchEvent() is taking  2646596 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 55 MB. Current time: 5/6/26, 10:02:53 PM TRT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2646903 ms. Increasing delay to 7940709 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 53 MB. Current time: 5/6/26, 10:32:56 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 62 MB. Current time: 5/7/26, 10:39:58 AM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 62 MB. Current time: 5/7/26, 11:10:03 AM TRT
+// Elapsed time: 52026 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_naive_top.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("fft_naive_top.v", 138, 251); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 138, 251, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 259, 264); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 260, 267, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+selectCodeEditor("fft_naive_top.v", 271, 269); // ae (fft_naive_top.v)
+selectCodeEditor("fft_naive_top.v", 271, 269, false, false, false, false, true); // ae (fft_naive_top.v) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 62 MB. Current time: 5/7/26, 11:40:06 AM TRT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 17 ms. Decreasing delay to 2017 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 62 MB. Current time: 5/7/26, 12:10:09 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 62 MB. Current time: 5/7/26, 12:40:12 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 62 MB. Current time: 5/7/26, 1:10:16 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 54 MB. Current time: 5/7/26, 1:40:19 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 54 MB. Current time: 5/7/26, 2:10:22 PM TRT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 355098 ms. Increasing delay to 1065294 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 54 MB. Current time: 5/7/26, 2:40:27 PM TRT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2 ms. Decreasing delay to 2002 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 54 MB. Current time: 5/7/26, 3:10:30 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 54 MB. Current time: 5/7/26, 3:40:33 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 53 MB. Current time: 5/7/26, 4:10:37 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 54 MB. Current time: 5/7/26, 4:40:40 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 62 MB. Current time: 5/7/26, 5:10:43 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 54 MB. Current time: 5/7/26, 5:40:46 PM TRT

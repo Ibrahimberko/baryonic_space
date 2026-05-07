@@ -39,3 +39,19 @@ launch_runs impl_1 -jobs 10
 wait_on_run impl_1
 open_run impl_1
 close_design
+launch_simulation
+launch_simulation
+source tb_fft_freqwin.tcl
+run all
+close_sim
+launch_simulation
+source tb_fft_freqwin.tcl
+run all
+save_wave_config {C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/tb_fft_freqwin_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/tb_fft_freqwin_behav.wcfg
+set_property xsim.view C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/tb_fft_freqwin_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/tb_fft_freqwin_behav.wcfg
+source tb_fft_freqwin.tcl
+run all

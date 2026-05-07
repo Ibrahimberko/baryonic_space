@@ -137,3 +137,2544 @@ Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
 // TclEventType: PROJECT_DASHBOARD_GADGET_NEW
 // TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 120 MB (+5233kb) [00:00:10]
+// [Engine Memory]: 1,043 MB (+239498kb) [00:00:10]
+// [GUI Memory]: 132 MB (+5533kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  1403 ms.
+// Tcl Message: open_project C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,075 MB. GUI used memory: 74 MB. Current time: 5/7/26, 10:55:31 AM TRT
+// Project name: fft_freqwin_part3; location: C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3; part: xc7z020clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1367.828 ; gain = 260.738 
+dismissDialog("Open Project"); // bh (Open Project Progress)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_freqwin_top (fft_freqwin_top.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_freqwin_top (fft_freqwin_top.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_freqwin_top (fft_freqwin_top.v), u_three_term : three_term (three_term.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_freqwin_top (fft_freqwin_top.v), u_three_term : three_term (three_term.v)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// [GUI Memory]: 141 MB (+3130kb) [00:00:21]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,105 MB. GUI used memory: 84 MB. Current time: 5/7/26, 10:55:55 AM TRT
+// Elapsed time: 15 seconds
+selectCodeEditor("three_term.v", 283, 225); // ae (three_term.v)
+selectCodeEditor("three_term.v", 283, 225, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 288, 248); // ae (three_term.v)
+selectCodeEditor("three_term.v", 288, 248, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 288, 258); // ae (three_term.v)
+selectCodeEditor("three_term.v", 288, 258, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 278, 287); // ae (three_term.v)
+selectCodeEditor("three_term.v", 267, 318); // ae (three_term.v)
+selectCodeEditor("three_term.v", 267, 318, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 289, 305); // ae (three_term.v)
+selectCodeEditor("three_term.v", 289, 305, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 289, 286); // ae (three_term.v)
+selectCodeEditor("three_term.v", 289, 286, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 289, 299); // ae (three_term.v)
+selectCodeEditor("three_term.v", 289, 299, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 289, 307); // ae (three_term.v)
+selectCodeEditor("three_term.v", 289, 307, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 199, 157); // ae (three_term.v)
+selectCodeEditor("three_term.v", 179, 300); // ae (three_term.v)
+selectCodeEditor("three_term.v", 179, 300, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 240, 301); // ae (three_term.v)
+selectCodeEditor("three_term.v", 240, 301, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 276, 301); // ae (three_term.v)
+selectCodeEditor("three_term.v", 276, 301, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 160, 284); // ae (three_term.v)
+selectCodeEditor("three_term.v", 160, 284, false, false, false, false, true); // ae (three_term.v) - Double Click
+// [Engine Memory]: 1,105 MB (+10859kb) [00:01:06]
+// Elapsed time: 21 seconds
+selectCodeEditor("three_term.v", 175, 367); // ae (three_term.v)
+selectCodeEditor("three_term.v", 175, 367, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 159, 319); // ae (three_term.v)
+selectCodeEditor("three_term.v", 159, 319, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 155, 306); // ae (three_term.v)
+selectCodeEditor("three_term.v", 155, 306, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 154, 300); // ae (three_term.v)
+selectCodeEditor("three_term.v", 154, 300, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 188, 388); // ae (three_term.v)
+selectCodeEditor("three_term.v", 188, 388, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 269, 388); // ae (three_term.v)
+selectCodeEditor("three_term.v", 269, 388, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 284, 406); // ae (three_term.v)
+selectCodeEditor("three_term.v", 284, 406, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("three_term.v", 115, 300); // ae (three_term.v)
+selectCodeEditor("three_term.v", 115, 300, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 171, 296); // ae (three_term.v)
+selectCodeEditor("three_term.v", 171, 296, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 189, 333); // ae (three_term.v)
+selectCodeEditor("three_term.v", 189, 333, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 267, 336); // ae (three_term.v)
+selectCodeEditor("three_term.v", 267, 336, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 226, 291); // ae (three_term.v)
+selectCodeEditor("three_term.v", 199, 343); // ae (three_term.v)
+selectCodeEditor("three_term.v", 199, 343, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 304, 346); // ae (three_term.v)
+selectCodeEditor("three_term.v", 304, 346, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 261, 272); // ae (three_term.v)
+selectCodeEditor("three_term.v", 261, 272, false, false, false, false, true); // ae (three_term.v) - Double Click
+// [GUI Memory]: 150 MB (+1447kb) [00:04:28]
+// Elapsed time: 312 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_freqwin_top (fft_freqwin_top.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_freqwin_top (fft_freqwin_top.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("fft_freqwin_top.v", 233, 310); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 233, 310, false, false, false, false, true); // ae (fft_freqwin_top.v) - Double Click
+selectCodeEditor("fft_freqwin_top.v", 231, 247); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 214, 247); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 214, 247, false, false, false, false, true); // ae (fft_freqwin_top.v) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_freqwin_top (fft_freqwin_top.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_freqwin_top (fft_freqwin_top.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_freqwin_top (fft_freqwin_top.v), u_three_term : three_term (three_term.v)]", 3, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_freqwin_top (fft_freqwin_top.v), u_three_term : three_term (three_term.v)]", 3, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// [GUI Memory]: 163 MB (+5788kb) [00:10:09]
+// Elapsed time: 182 seconds
+selectCodeEditor("three_term.v", 90, 403); // ae (three_term.v)
+selectCodeEditor("three_term.v", 90, 403, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 203, 299); // ae (three_term.v)
+selectCodeEditor("three_term.v", 203, 299, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("three_term.v", 114, 248); // ae (three_term.v)
+selectCodeEditor("three_term.v", 114, 248, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 113, 245); // ae (three_term.v)
+selectCodeEditor("three_term.v", 114, 246, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 116, 252); // ae (three_term.v)
+selectCodeEditor("three_term.v", 116, 252, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("three_term.v", 179, 238); // ae (three_term.v)
+selectCodeEditor("three_term.v", 179, 238, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 80, 379); // ae (three_term.v)
+selectCodeEditor("three_term.v", 80, 379, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 100, 386); // ae (three_term.v)
+selectCodeEditor("three_term.v", 100, 386, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 189, 383); // ae (three_term.v)
+selectCodeEditor("three_term.v", 189, 383, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 295, 387); // ae (three_term.v)
+selectCodeEditor("three_term.v", 295, 387, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("three_term.v", 199, 386); // ae (three_term.v)
+selectCodeEditor("three_term.v", 199, 386, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 187, 347); // ae (three_term.v)
+selectCodeEditor("three_term.v", 187, 347, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 70 seconds
+selectCodeEditor("three_term.v", 202, 316); // ae (three_term.v)
+selectCodeEditor("three_term.v", 202, 316, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("three_term.v", 255, 145); // ae (three_term.v)
+selectCodeEditor("three_term.v", 255, 145, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 92 seconds
+selectCodeEditor("three_term.v", 165, 350); // ae (three_term.v)
+selectCodeEditor("three_term.v", 165, 350, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 26 seconds
+selectCodeEditor("three_term.v", 217, 332); // ae (three_term.v)
+selectCodeEditor("three_term.v", 217, 332, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 33 seconds
+selectCodeEditor("three_term.v", 540, 370); // ae (three_term.v)
+// Elapsed time: 19 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sweep"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+selectCodeEditor("three_term.v", 151, 26); // ae (three_term.v)
+selectCodeEditor("three_term.v", 151, 26, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("three_term.v", 229, 230); // ae (three_term.v)
+selectCodeEditor("three_term.v", 229, 230, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 386, 230); // ae (three_term.v)
+selectCodeEditor("three_term.v", 386, 230, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 27 seconds
+selectCodeEditor("three_term.v", 302, 403); // ae (three_term.v)
+selectCodeEditor("three_term.v", 302, 403, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 181 seconds
+selectCodeEditor("three_term.v", 124, 281); // ae (three_term.v)
+selectCodeEditor("three_term.v", 124, 281, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("three_term.v", 94, 271); // ae (three_term.v)
+selectCodeEditor("three_term.v", 94, 271, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 203, 266); // ae (three_term.v)
+selectCodeEditor("three_term.v", 203, 266, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 196, 281); // ae (three_term.v)
+selectCodeEditor("three_term.v", 196, 281, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 198, 264); // ae (three_term.v)
+selectCodeEditor("three_term.v", 198, 264, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 198, 285); // ae (three_term.v)
+selectCodeEditor("three_term.v", 198, 285, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 180, 302); // ae (three_term.v)
+selectCodeEditor("three_term.v", 180, 302, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 221, 336); // ae (three_term.v)
+selectCodeEditor("three_term.v", 221, 336, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 195, 262); // ae (three_term.v)
+selectCodeEditor("three_term.v", 195, 262, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 554 seconds
+selectCodeEditor("three_term.v", 183, 344); // ae (three_term.v)
+selectCodeEditor("three_term.v", 183, 344, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("three_term.v", 170, 311); // ae (three_term.v)
+selectCodeEditor("three_term.v", 170, 311, false, false, false, false, true); // ae (three_term.v) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 85 MB. Current time: 5/7/26, 11:25:56 AM TRT
+// Elapsed time: 84 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_freqwin_top.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("fft_freqwin_top.v", 292, 457); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 292, 457, false, false, false, false, true); // ae (fft_freqwin_top.v) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("fft_freqwin_top.v", 263, 336); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 263, 336, false, false, false, false, true); // ae (fft_freqwin_top.v) - Double Click
+// Elapsed time: 56 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "three_term.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 146 seconds
+selectCodeEditor("three_term.v", 270, 179); // ae (three_term.v)
+selectCodeEditor("three_term.v", 270, 179, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 23 seconds
+selectCodeEditor("three_term.v", 203, 195); // ae (three_term.v)
+selectCodeEditor("three_term.v", 203, 195, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 180, 297); // ae (three_term.v)
+selectCodeEditor("three_term.v", 180, 297, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("three_term.v", 181, 258); // ae (three_term.v)
+selectCodeEditor("three_term.v", 181, 258, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 227, 259); // ae (three_term.v)
+selectCodeEditor("three_term.v", 227, 259, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 186, 183); // ae (three_term.v)
+selectCodeEditor("three_term.v", 186, 183, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 238, 183); // ae (three_term.v)
+selectCodeEditor("three_term.v", 238, 183, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 306, 180); // ae (three_term.v)
+selectCodeEditor("three_term.v", 306, 180, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 292, 178); // ae (three_term.v)
+selectCodeEditor("three_term.v", 292, 178, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 159, 199); // ae (three_term.v)
+selectCodeEditor("three_term.v", 159, 199, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 169, 214); // ae (three_term.v)
+selectCodeEditor("three_term.v", 169, 214, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("three_term.v", 182, 300); // ae (three_term.v)
+selectCodeEditor("three_term.v", 182, 300, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 204, 289); // ae (three_term.v)
+selectCodeEditor("three_term.v", 203, 289, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("three_term.v", 339, 336); // ae (three_term.v)
+selectCodeEditor("three_term.v", 224, 264); // ae (three_term.v)
+selectCodeEditor("three_term.v", 224, 264, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 145, 351); // ae (three_term.v)
+selectCodeEditor("three_term.v", 145, 351, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 257, 261); // ae (three_term.v)
+selectCodeEditor("three_term.v", 257, 261, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 186, 303); // ae (three_term.v)
+selectCodeEditor("three_term.v", 186, 303, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 149, 298); // ae (three_term.v)
+selectCodeEditor("three_term.v", 149, 298, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 160, 315); // ae (three_term.v)
+selectCodeEditor("three_term.v", 160, 315, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 188, 334); // ae (three_term.v)
+selectCodeEditor("three_term.v", 188, 334, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 299, 334); // ae (three_term.v)
+selectCodeEditor("three_term.v", 299, 334, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("three_term.v", 180, 185); // ae (three_term.v)
+selectCodeEditor("three_term.v", 180, 185, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 260, 182); // ae (three_term.v)
+selectCodeEditor("three_term.v", 260, 182, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 26 seconds
+selectCodeEditor("three_term.v", 250, 299); // ae (three_term.v)
+selectCodeEditor("three_term.v", 250, 299, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("three_term.v", 193, 317); // ae (three_term.v)
+selectCodeEditor("three_term.v", 193, 317, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 149, 336); // ae (three_term.v)
+selectCodeEditor("three_term.v", 149, 336, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 241, 313); // ae (three_term.v)
+selectCodeEditor("three_term.v", 241, 313, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 250, 318); // ae (three_term.v)
+selectCodeEditor("three_term.v", 250, 318, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("three_term.v", 164, 266); // ae (three_term.v)
+selectCodeEditor("three_term.v", 164, 266, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 105 seconds
+selectCodeEditor("three_term.v", 190, 266); // ae (three_term.v)
+selectCodeEditor("three_term.v", 190, 266, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("three_term.v", 305, 267); // ae (three_term.v)
+selectCodeEditor("three_term.v", 305, 267, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("three_term.v", 179, 262); // ae (three_term.v)
+selectCodeEditor("three_term.v", 179, 262, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 224 seconds
+selectCodeEditor("three_term.v", 266, 315); // ae (three_term.v)
+selectCodeEditor("three_term.v", 266, 315, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 261, 326); // ae (three_term.v)
+selectCodeEditor("three_term.v", 261, 326, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 327, 336); // ae (three_term.v)
+selectCodeEditor("three_term.v", 327, 336, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("three_term.v", 181, 265); // ae (three_term.v)
+selectCodeEditor("three_term.v", 181, 265, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 199, 268); // ae (three_term.v)
+selectCodeEditor("three_term.v", 199, 268, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 251, 266); // ae (three_term.v)
+selectCodeEditor("three_term.v", 251, 266, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 187, 280); // ae (three_term.v)
+selectCodeEditor("three_term.v", 187, 280, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 245, 279); // ae (three_term.v)
+selectCodeEditor("three_term.v", 245, 279, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 336, 284); // ae (three_term.v)
+selectCodeEditor("three_term.v", 336, 284, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 29 seconds
+selectCodeEditor("three_term.v", 105, 349); // ae (three_term.v)
+selectCodeEditor("three_term.v", 105, 349, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 113, 320); // ae (three_term.v)
+selectCodeEditor("three_term.v", 113, 320, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 124, 397); // ae (three_term.v)
+selectCodeEditor("three_term.v", 123, 398, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 175, 237); // ae (three_term.v)
+selectCodeEditor("three_term.v", 175, 237, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 89, 239); // ae (three_term.v)
+selectCodeEditor("three_term.v", 89, 239, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 96, 229); // ae (three_term.v)
+selectCodeEditor("three_term.v", 96, 229, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 25 seconds
+selectCodeEditor("three_term.v", 454, 350); // ae (three_term.v)
+selectCodeEditor("three_term.v", 454, 350, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 286, 404); // ae (three_term.v)
+// Elapsed time: 10 seconds
+selectCodeEditor("three_term.v", 128, 192); // ae (three_term.v)
+selectCodeEditor("three_term.v", 128, 192, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 201, 180); // ae (three_term.v)
+selectCodeEditor("three_term.v", 201, 180, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 372, 181); // ae (three_term.v)
+selectCodeEditor("three_term.v", 372, 181, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 351, 198); // ae (three_term.v)
+selectCodeEditor("three_term.v", 351, 198, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 457, 196); // ae (three_term.v)
+selectCodeEditor("three_term.v", 457, 196, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("three_term.v", 381, 198); // ae (three_term.v)
+selectCodeEditor("three_term.v", 381, 198, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 381, 181); // ae (three_term.v)
+selectCodeEditor("three_term.v", 381, 181, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 383, 457); // ae (three_term.v)
+selectCodeEditor("three_term.v", 383, 457, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 33 seconds
+selectCodeEditor("three_term.v", 86, 81); // ae (three_term.v)
+selectCodeEditor("three_term.v", 291, 77); // ae (three_term.v)
+// Elapsed time: 51 seconds
+selectCodeEditor("three_term.v", 611, 446); // ae (three_term.v)
+selectCodeEditor("three_term.v", 521, 411); // ae (three_term.v)
+selectCodeEditor("three_term.v", 621, 432); // ae (three_term.v)
+selectCodeEditor("three_term.v", 636, 441); // ae (three_term.v)
+typeControlKey((HResource) null, "three_term.v", 'c'); // ae (three_term.v)
+// Elapsed time: 53 seconds
+selectCodeEditor("three_term.v", 244, 455); // ae (three_term.v)
+selectCodeEditor("three_term.v", 207, 441); // ae (three_term.v)
+selectCodeEditor("three_term.v", 209, 438); // ae (three_term.v)
+selectCodeEditor("three_term.v", 209, 438, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 314 seconds
+selectCodeEditor("three_term.v", 239, 371); // ae (three_term.v)
+selectCodeEditor("three_term.v", 239, 371, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("three_term.v", 204, 181); // ae (three_term.v)
+selectCodeEditor("three_term.v", 204, 181, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 377, 249); // ae (three_term.v)
+// Elapsed time: 24 seconds
+selectCodeEditor("three_term.v", 293, 371); // ae (three_term.v)
+selectCodeEditor("three_term.v", 293, 371, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 214, 247); // ae (three_term.v)
+selectCodeEditor("three_term.v", 214, 247, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 236, 415); // ae (three_term.v)
+selectCodeEditor("three_term.v", 295, 417); // ae (three_term.v)
+selectCodeEditor("three_term.v", 295, 417, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 284, 417); // ae (three_term.v)
+selectCodeEditor("three_term.v", 284, 417, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 378, 252); // ae (three_term.v)
+selectCodeEditor("three_term.v", 378, 252, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 230, 256); // ae (three_term.v)
+selectCodeEditor("three_term.v", 235, 249); // ae (three_term.v)
+selectCodeEditor("three_term.v", 235, 249, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 23 seconds
+selectCodeEditor("three_term.v", 372, 267); // ae (three_term.v)
+selectCodeEditor("three_term.v", 372, 267, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 397, 357); // ae (three_term.v)
+// Elapsed time: 21 seconds
+selectCodeEditor("three_term.v", 297, 368); // ae (three_term.v)
+selectCodeEditor("three_term.v", 297, 368, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("three_term.v", 247, 406); // ae (three_term.v)
+selectCodeEditor("three_term.v", 247, 406, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 54 seconds
+selectCodeEditor("three_term.v", 141, 311); // ae (three_term.v)
+selectCodeEditor("three_term.v", 141, 311, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 105, 196); // ae (three_term.v)
+selectCodeEditor("three_term.v", 105, 196, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 118, 210); // ae (three_term.v)
+selectCodeEditor("three_term.v", 118, 210, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 103, 231); // ae (three_term.v)
+selectCodeEditor("three_term.v", 103, 231, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 109, 217); // ae (three_term.v)
+selectCodeEditor("three_term.v", 109, 217, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 105, 199); // ae (three_term.v)
+selectCodeEditor("three_term.v", 105, 199, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 30 seconds
+selectCodeEditor("three_term.v", 232, 167); // ae (three_term.v)
+selectCodeEditor("three_term.v", 232, 167, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 296, 216); // ae (three_term.v)
+selectCodeEditor("three_term.v", 204, 368); // ae (three_term.v)
+selectCodeEditor("three_term.v", 204, 368, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 121, 110); // ae (three_term.v)
+selectCodeEditor("three_term.v", 121, 110, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 210, 106); // ae (three_term.v)
+selectCodeEditor("three_term.v", 210, 106, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 47 seconds
+selectCodeEditor("three_term.v", 211, 333); // ae (three_term.v)
+selectCodeEditor("three_term.v", 196, 210); // ae (three_term.v)
+selectCodeEditor("three_term.v", 196, 210, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 215, 60); // ae (three_term.v)
+selectCodeEditor("three_term.v", 215, 60, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("three_term.v", 231, 316); // ae (three_term.v)
+selectCodeEditor("three_term.v", 231, 316, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 238, 328); // ae (three_term.v)
+selectCodeEditor("three_term.v", 238, 328, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 198, 348); // ae (three_term.v)
+selectCodeEditor("three_term.v", 198, 348, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 209, 350); // ae (three_term.v)
+selectCodeEditor("three_term.v", 209, 350, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 30 seconds
+selectCodeEditor("three_term.v", 121, 401); // ae (three_term.v)
+selectCodeEditor("three_term.v", 121, 401, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("three_term.v", 134, 429); // ae (three_term.v)
+selectCodeEditor("three_term.v", 134, 429, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 140, 309); // ae (three_term.v)
+selectCodeEditor("three_term.v", 140, 309, false, false, false, false, true); // ae (three_term.v) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 85 MB. Current time: 5/7/26, 11:55:57 AM TRT
+// Elapsed time: 583 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectButton(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // d (PAResourceCommand.PACommandNames_RUN_SYNTHESIS)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: FILE_SET_NEW
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 10 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: xfft_0 
+// Tcl Message: [Thu May  7 12:04:53 2026] Launched xfft_0_synth_1... Run output will be captured here: C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.runs/xfft_0_synth_1/runme.log [Thu May  7 12:04:53 2026] Launched synth_1... Run output will be captured here: C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bh (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:09m:24s
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:09m:26s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 175 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Synthesis Completed"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Synthesis Completed"); // W.a (dialog0)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b (PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b (PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED)
+// [GUI Memory]: 171 MB (+187kb) [01:18:41]
+// Elapsed time: 368 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "three_term.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("three_term.v", 305, 238); // ae (three_term.v)
+selectCodeEditor("three_term.v", 305, 238, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 301, 225); // ae (three_term.v)
+selectCodeEditor("three_term.v", 301, 225, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 60 seconds
+selectCodeEditor("three_term.v", 121, 179); // ae (three_term.v)
+selectCodeEditor("three_term.v", 121, 179, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 430 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_freqwin_top.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("fft_freqwin_top.v", 499, 455); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 501, 460); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 112, 427); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 371, 471); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 466, 454); // ae (fft_freqwin_top.v)
+// Elapsed time: 10 seconds
+selectCodeEditor("fft_freqwin_top.v", 165, 402); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 288, 460); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 288, 460, false, false, false, false, true); // ae (fft_freqwin_top.v) - Double Click
+selectCodeEditor("fft_freqwin_top.v", 289, 446); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 293, 399); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 293, 399, false, false, false, false, true); // ae (fft_freqwin_top.v) - Double Click
+selectCodeEditor("fft_freqwin_top.v", 473, 464); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 486, 450); // ae (fft_freqwin_top.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:27m:16s
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // aq (PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, simulation_run_behavioral_menu)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_fft_freqwin' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvlog --incr --relax -L uvm -prj tb_fft_freqwin_vlog.prj" 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fft_freqwin_behav xil_defaultlib.tb_fft_freqwin xil_defaultlib.glbl -log elaborate.log" 
+// Tcl Message: Vivado Simulator v2024.2.0 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fft_freqwin_behav xil_defaultlib.tb_fft_freqwin xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration Pass Through NonSizing Optimizer 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 81 MB. Current time: 5/7/26, 12:23:18 PM TRT
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Built simulation snapshot tb_fft_freqwin_behav 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:28 . Memory (MB): peak = 1436.516 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '29' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_fft_freqwin_behav -key {Behavioral:sim_1:Functional:tb_fft_freqwin} -tclbatch {tb_fft_freqwin.tcl} -log {simulate.log} -testplusarg MEM_DIR=." 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 32 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // x (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 88 MB. Current time: 5/7/26, 12:23:21 PM TRT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_OBJECT_TREE_REFRESHING
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source tb_fft_freqwin.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_fft_freqwin_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:33 . Memory (MB): peak = 1483.770 ; gain = 55.566 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/h': 33s
+// 'd' command handler elapsed time: 33 seconds
+dismissDialog("Run Simulation"); // e (Run Simulation Progress)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:27m:52s
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 87 MB. Current time: 5/7/26, 12:23:25 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 88 MB. Current time: 5/7/26, 12:23:25 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 87 MB. Current time: 5/7/26, 12:23:25 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 87 MB. Current time: 5/7/26, 12:23:25 PM TRT
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:27m:54s
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 87 MB. Current time: 5/7/26, 12:23:26 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 87 MB. Current time: 5/7/26, 12:23:26 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 87 MB. Current time: 5/7/26, 12:23:26 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 87 MB. Current time: 5/7/26, 12:23:26 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 87 MB. Current time: 5/7/26, 12:23:26 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 87 MB. Current time: 5/7/26, 12:23:26 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 87 MB. Current time: 5/7/26, 12:23:26 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 87 MB. Current time: 5/7/26, 12:23:26 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 87 MB. Current time: 5/7/26, 12:23:27 PM TRT
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 87 MB. Current time: 5/7/26, 12:23:28 PM TRT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:27m:56s
+// Elapsed time: 13 seconds
+dismissDialog("Invalid Top Module"); // s (dialog1)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_freqwin_top.v", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aa
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, fft_freqwin_top.v]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, fft_freqwin_top.v]", 2, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectCodeEditor("fft_freqwin_top.v", 383, 173); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 352, 378); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 147, 409); // ae (fft_freqwin_top.v)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:28m:20s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:28m:23s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:28m:24s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:28m:26s
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, "simulation_live_run_all"); // C (PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, simulation_live_run_all)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_OBJECT_TREE_REFRESHING
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: run all 
+//  *** Exceptions that should be ignored by HSystem.debug () - swept under the rug. *** 
+/*
+java.awt.IllegalComponentStateException: component must be showing on the screen to determine its location
+*/
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 81 MB. Current time: 5/7/26, 12:24:11 PM TRT
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 1,119 MB. GUI used memory: 80 MB. Current time: 5/7/26, 12:24:12 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// Elapsed time: 14 seconds
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // t (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_freqwin_top.v", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (PAResourceTtoZ.TaskBanner_CLOSE)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - tb_fft_freqwin", "DesignTask.SIMULATION");
+selectButton(RDIResource.BaseDialog_OK, "OK", "Confirm Close"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+dismissDialog("Confirm Close"); // u (dialog2)
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bh (Close Progress)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1160] Copying file C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.runs/synth_1/fft_freqwin_top.dcp to C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.srcs/utils_1/imports/synth_1 and adding it to utils fileset 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 10 
+// Tcl Message: [Thu May  7 12:24:55 2026] Launched synth_1... Run output will be captured here: C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bh (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 42 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Synthesis Completed"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Synthesis Completed"); // W.a (dialog3)
+// Elapsed time: 69 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 18, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 10 
+// Tcl Message: [Thu May  7 12:26:47 2026] Launched impl_1... Run output will be captured here: C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bh (Starting Design Runs Progress)
+// TclEventType: RUN_STATUS_CHANGE
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // e (PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_GRAPH, "Graph", 0); // e (PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 109 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Implementation Completed"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Implementation Completed"); // W.a (dialog4)
+// Elapsed time: 17 seconds
+selectTreeTableHeader(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "Methodology", 11); // ar (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; route_design Complete! ; NA ; NA ; NA ; NA ;  ; NA ; 48.17002487182617 ; 0 ; 1000 CW, 102 Warn ;  ;  ; 1819 ; 2895 ; 4.0 ; 0 ; 15 ; Thu May 07 12:26:55 TRT 2026 ; 00:00:45 ; Vivado Implementation Defaults (Vivado Implementation 2024) ; Vivado Implementation Default Reports (Vivado Implementation 2024) ; xc7z020clg400-1 ; Default settings for Implementation.", 1, "48.17002487182617", 11, false); // ar (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 19, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// Tcl Message: open_run impl_1 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,498 MB. GUI used memory: 84 MB. Current time: 5/7/26, 12:29:08 PM TRT
+// [Engine Memory]: 1,498 MB (+354086kb) [01:33:48]
+// Xgd.load filename: C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/.Xil/Vivado-13504-DESKTOP-PNADBHN/xc7z020_detail.xgd_5CA4 elapsed time: 1.1s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.2s
+// [Engine Memory]: 1,692 MB (+124685kb) [01:33:49]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,830 MB (+56146kb) [01:33:50]
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  1180 ms.
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1693.375 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 290 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2024.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1804.207 ; gain = 2.887 
+// Tcl Message: INFO: [Designutils 20-5722] Start Reading Physical Databases. 
+// Tcl Message: Reading placement. 
+// Tcl Message: Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1807.145 ; gain = 2.594 
+// Tcl Message: Reading placer database... 
+// Tcl Message: Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1808.941 ; gain = 1.797 Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 1817.090 ; gain = 5.668 Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1817.090 ; gain = 0.000 
+// Tcl Message: Reading routing. 
+// Tcl Message: Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1820.625 ; gain = 3.535 Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.158 . Memory (MB): peak = 1820.625 ; gain = 16.074 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.158 . Memory (MB): peak = 1820.625 ; gain = 16.074 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2220.977 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 23 instances were transformed.   RAM64X1S => RAM64X1S (RAMS64E): 23 instances  
+// TclEventType: CURR_DESIGN_SET
+// Device view-level: 0,0
+// [GUI Memory]: 181 MB (+1138kb) [01:33:51]
+// Tcl Message: open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2557.648 ; gain = 997.133 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [Engine Memory]: 1,925 MB (+3288kb) [01:33:52]
+// [GUI Memory]: 191 MB (+997kb) [01:33:52]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dV' command handler elapsed time: 11 seconds
+// Elapsed time: 11 seconds
+dismissDialog("Open Implemented Design"); // bh (Open Implemented Design Progress)
+// RouteApi::initDelayMediator elapsed time: 3.2s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+selectButton(RDIResource.BaseDialog_OK, "OK", "Methodology Violations"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Methodology Violations"); // aF (dialog5)
+selectTab((HResource) null, (HResource) null, "Power", 7); // aa
+selectTab((HResource) null, (HResource) null, "Methodology", 6); // aa
+// [GUI Memory]: 217 MB (+18050kb) [01:34:01]
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aa
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aa
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aa
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; route_design Complete! ; NA ; NA ; NA ; NA ;  ; NA ; 48.17002487182617 ; 0 ; 1000 CW, 102 Warn ;  ;  ; 1819 ; 2895 ; 4.0 ; 0 ; 15 ; Thu May 07 12:26:55 TRT 2026 ; 00:00:45 ; Vivado Implementation Defaults (Vivado Implementation 2024) ; Vivado Implementation Default Reports (Vivado Implementation 2024) ; xc7z020clg400-1 ; Default settings for Implementation.", 1, "48.17002487182617", 11, false); // ar (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE)
+selectTab((HResource) null, (HResource) null, "DRC", 5); // aa
+selectTab((HResource) null, (HResource) null, "Methodology", 6); // aa
+selectTab((HResource) null, (HResource) null, "Power", 7); // aa
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aa
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; route_design Complete! ; NA ; NA ; NA ; NA ;  ; NA ; 48.17002487182617 ; 0 ; 1000 CW, 102 Warn ;  ;  ; 1819 ; 2895 ; 4.0 ; 0 ; 15 ; Thu May 07 12:26:55 TRT 2026 ; 00:00:45 ; Vivado Implementation Defaults (Vivado Implementation 2024) ; Vivado Implementation Default Reports (Vivado Implementation 2024) ; xc7z020clg400-1 ; Default settings for Implementation.", 1, "48.17002487182617", 11, false); // ar (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; 270 ; 136 ; 3.0 ; 0 ; 6 ; Thu May 07 12:25:02 TRT 2026 ; 00:00:23 ; Vivado Synthesis Defaults (Vivado Synthesis 2024) ; Vivado Synthesis Default Reports (Vivado Synthesis 2024) ; xc7z020clg400-1 ; Vivado Synthesis Defaults", 0, (String) null, 12, true); // ar (PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE) - Node
+selectTab((HResource) null, (HResource) null, "DRC", 5); // aa
+selectCheckBox(PAResourceTtoZ.VioResultsTab_WARNINGS, (String) null, false); // f (PAResourceTtoZ.VioResultsTab_WARNINGS): FALSE
+selectCheckBox(PAResourceTtoZ.VioResultsTab_ADVISORIES, (String) null, false); // f (PAResourceTtoZ.VioResultsTab_ADVISORIES): FALSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,022 MB. GUI used memory: 133 MB. Current time: 5/7/26, 12:30:10 PM TRT
+// [Engine Memory]: 2,022 MB (+754kb) [01:34:51]
+// Elapsed time: 117 seconds
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // N (PAResourceOtoP.PAViews_DEVICE, PlanAheadTabDevice)
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aa
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // J (PAResourceOtoP.PAViews_CODE, PlanAheadTabCode)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (PAResourceTtoZ.TaskBanner_CLOSE)
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+selectButton(RDIResource.BaseDialog_OK, "OK", "Confirm Close"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Confirm Close"); // u (dialog6)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 113 MB. Current time: 5/7/26, 12:31:44 PM TRT
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,025 MB. GUI used memory: 114 MB. Current time: 5/7/26, 12:31:44 PM TRT
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bh (Close Progress)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "three_term.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_freqwin_top (fft_freqwin_top.v)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fft_freqwin_top (fft_freqwin_top.v)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 236 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "three_term.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("three_term.v", 295, 240); // ae (three_term.v)
+selectCodeEditor("three_term.v", 295, 240, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 183, 102); // ae (three_term.v)
+selectCodeEditor("three_term.v", 183, 102, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 179, 95); // ae (three_term.v)
+selectCodeEditor("three_term.v", 179, 95, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 327, 63); // ae (three_term.v)
+selectCodeEditor("three_term.v", 327, 63, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_freqwin_top.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 80 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "three_term.v", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("three_term.v", 218, 230); // ae (three_term.v)
+selectCodeEditor("three_term.v", 218, 230, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 168, 140); // ae (three_term.v)
+selectCodeEditor("three_term.v", 168, 140, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 273, 203); // ae (three_term.v)
+selectCodeEditor("three_term.v", 273, 203, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 267, 131); // ae (three_term.v)
+selectCodeEditor("three_term.v", 267, 131, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 221, 333); // ae (three_term.v)
+selectCodeEditor("three_term.v", 221, 333, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("three_term.v", 122, 283); // ae (three_term.v)
+selectCodeEditor("three_term.v", 125, 285); // ae (three_term.v)
+selectCodeEditor("three_term.v", 238, 317); // ae (three_term.v)
+selectCodeEditor("three_term.v", 238, 317, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 213, 368); // ae (three_term.v)
+selectCodeEditor("three_term.v", 203, 382); // ae (three_term.v)
+selectCodeEditor("three_term.v", 203, 382, false, false, false, false, true); // ae (three_term.v) - Double Click
+selectCodeEditor("three_term.v", 173, 147); // ae (three_term.v)
+selectCodeEditor("three_term.v", 173, 147, false, false, false, false, true); // ae (three_term.v) - Double Click
+// Elapsed time: 263 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 181 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_freqwin_top.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 121 seconds
+closeMainWindow("fft_freqwin_part3 - [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.xpr] - Vivado 2024.2"); // G (MainFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXIT
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Exit Vivado"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Exit Vivado"); // u (dialog7)
+// Elapsed time: 68 seconds
+selectCodeEditor("fft_freqwin_top.v", 397, 382); // ae (fft_freqwin_top.v)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // aq (PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, simulation_run_behavioral_menu)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_fft_freqwin' 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.sim/sim_1/behav/xsim/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.sim/sim_1/behav/xsim/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 5 seconds
+selectButton("OptionPane.button", "OK", "Run Simulation"); // JButton (OptionPane.button)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK", "Critical Messages"); // f (PAResourceAtoD.CmdMsgDialog_OK)
+dismissDialog("Critical Messages"); // a (dialog8)
+selectCodeEditor("fft_freqwin_top.v", 135, 421); // ae (fft_freqwin_top.v)
+typeControlKey(null, null, 'z');
+selectCodeEditor("fft_freqwin_top.v", 143, 411, false, true, false, false, false); // ae (fft_freqwin_top.v) - Control Key
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("fft_freqwin_top.v", 119, 405); // ae (fft_freqwin_top.v)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 7, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 7, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 8, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_fft_freqwin (tb_fft_freqwin.sv)]", 9, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_fft_freqwin (tb_fft_freqwin.sv)]", 9, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_fft_freqwin (tb_fft_freqwin.sv)]", 9, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectCodeEditor("tb_fft_freqwin.sv", 119, 292); // ae (tb_fft_freqwin.sv)
+selectCodeEditor("tb_fft_freqwin.sv", 119, 292, false, false, false, false, true); // ae (tb_fft_freqwin.sv) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_freqwin_top.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fft_freqwin.sv", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_freqwin_top.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fft_freqwin.sv", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("tb_fft_freqwin.sv", 341, 459); // ae (tb_fft_freqwin.sv)
+selectCodeEditor("tb_fft_freqwin.sv", 125, 449); // ae (tb_fft_freqwin.sv)
+selectCodeEditor("tb_fft_freqwin.sv", 304, 461); // ae (tb_fft_freqwin.sv)
+selectCodeEditor("tb_fft_freqwin.sv", 302, 451); // ae (tb_fft_freqwin.sv)
+selectCodeEditor("tb_fft_freqwin.sv", 238, 449); // ae (tb_fft_freqwin.sv)
+selectCodeEditor("tb_fft_freqwin.sv", 238, 449, false, false, false, false, true); // ae (tb_fft_freqwin.sv) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_freqwin_top.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("fft_freqwin_top.v", 409, 316); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 451, 368); // ae (fft_freqwin_top.v)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fft_freqwin.sv", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_freqwin_top.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("fft_freqwin_top.v", 384, 392); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 372, 378); // ae (fft_freqwin_top.v)
+typeControlKey((HResource) null, "fft_freqwin_top.v", 'v'); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 527, 467); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 599, 434); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 287, 416, false, true, false, false, false); // ae (fft_freqwin_top.v) - Control Key
+selectCodeEditor("fft_freqwin_top.v", 277, 412, false, true, false, false, false); // ae (fft_freqwin_top.v) - Control Key
+selectCodeEditor("fft_freqwin_top.v", 276, 412, false, true, false, false, true); // ae (fft_freqwin_top.v) - Control Key - Double Click
+selectCodeEditor("fft_freqwin_top.v", 330, 420); // ae (fft_freqwin_top.v)
+// Elapsed time: 38 seconds
+selectCodeEditor("fft_freqwin_top.v", 226, 319); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 226, 319, false, false, false, false, true); // ae (fft_freqwin_top.v) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fft_freqwin.sv", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("tb_fft_freqwin.sv", 146, 336); // ae (tb_fft_freqwin.sv)
+selectCodeEditor("tb_fft_freqwin.sv", 146, 336, false, false, false, false, true); // ae (tb_fft_freqwin.sv) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_freqwin_top.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("fft_freqwin_top.v", 289, 310); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 268, 351); // ae (fft_freqwin_top.v)
+typeControlKey((HResource) null, "fft_freqwin_top.v", 'v'); // ae (fft_freqwin_top.v)
+selectCodeEditor("fft_freqwin_top.v", 41, 364); // ae (fft_freqwin_top.v)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fft_freqwin.sv", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_freqwin_top.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fft_freqwin.sv", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "fft_freqwin_top.v", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("fft_freqwin_top.v", 312, 389); // ae (fft_freqwin_top.v)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:56m:26s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 01h:56m:27s
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // aq (PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, simulation_run_behavioral_menu)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_fft_freqwin' 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -L uvm -prj tb_fft_freqwin_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.sim/sim_1/behav/xsim' 
+// Tcl Message: Starting static elaboration Pass Through NonSizing Optimizer 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Built simulation snapshot tb_fft_freqwin_behav 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:27 . Memory (MB): peak = 2678.078 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '27' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_fft_freqwin_behav -key {Behavioral:sim_1:Functional:tb_fft_freqwin} -tclbatch {tb_fft_freqwin.tcl} -log {simulate.log} -testplusarg MEM_DIR=." 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 95 MB. Current time: 5/7/26, 12:52:30 PM TRT
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 31 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // x (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 99 MB. Current time: 5/7/26, 12:52:31 PM TRT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_OBJECT_TREE_REFRESHING
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source tb_fft_freqwin.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// Tcl Message: # run 1000ns 
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_fft_freqwin_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:32 . Memory (MB): peak = 2678.078 ; gain = 0.000 
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/h': 31s
+// 'd' command handler elapsed time: 31 seconds
+dismissDialog("Run Simulation"); // e (Run Simulation Progress)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, "simulation_live_run_all"); // C (PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, simulation_live_run_all)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_OBJECT_TREE_REFRESHING
+// Tcl Message: run all 
+// Tcl Message: [1184000] === Frame 0: Input send done === [3698000] [Frame0 12.5MHz freqwin] xk=10 abs_sq=0 [3702000] [Frame0 12.5MHz freqwin] xk=11 abs_sq=0 [3706000] [Frame0 12.5MHz freqwin] xk=12 abs_sq=0 [3710000] [Frame0 12.5MHz freqwin] xk=13 abs_sq=0 [3714000] [Frame0 12.5MHz freqwin] xk=14 abs_sq=0 [3718000] [Frame0 12.5MHz freqwin] xk=15 abs_sq=179776 [3722000] [Frame0 12.5MHz freqwin] xk=16 abs_sq=990026 [3726000] [Frame0 12.5MHz freqwin] xk=17 abs_sq=179776 [3730000] [Frame0 12.5MHz freqwin] xk=18 abs_sq=0 [4678000] frame 0 total energy = 1349579 (bins=256) [4682000] peak[0]: index=16  value=990026 [4762000] === Frame 1: Sending frame: 10.0 MHz freqwin === [5788000] === Frame 1: Input send done === 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 91 MB. Current time: 5/7/26, 12:52:40 PM TRT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fft_freqwin.sv", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (PAResourceTtoZ.TaskBanner_CLOSE)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - tb_fft_freqwin", "DesignTask.SIMULATION");
+selectButton(RDIResource.BaseDialog_OK, "OK", "Confirm Close"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+dismissDialog("Confirm Close"); // u (dialog9)
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bh (Close Progress)
+// Elapsed time: 180 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // aq (PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, simulation_run_behavioral_menu)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_fft_freqwin' 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -L uvm -prj tb_fft_freqwin_vlog.prj" "xvhdl --incr --relax -prj tb_fft_freqwin_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.sim/sim_1/behav/xsim' 
+// Tcl Message: Pass Through NonSizing Optimizer 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_fft_freqwin_behav -key {Behavioral:sim_1:Functional:tb_fft_freqwin} -tclbatch {tb_fft_freqwin.tcl} -log {simulate.log} -testplusarg MEM_DIR=." 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // x (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:55:57 PM TRT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_OBJECT_TREE_REFRESHING
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: source tb_fft_freqwin.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_fft_freqwin_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 2678.078 ; gain = 0.000 
+// 'd' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // e (Run Simulation Progress)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:14 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:14 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:14 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:15 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:15 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:16 PM TRT
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:17 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:17 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:20 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:21 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:21 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:21 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:21 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:21 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:21 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:22 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:22 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:22 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:22 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:22 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:56:22 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:22 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:22 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:22 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:22 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:23 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:23 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:23 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:23 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:23 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:24 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:24 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// Elapsed time: 29 seconds
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, "simulation_live_run_all"); // C (PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, simulation_live_run_all)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_OBJECT_TREE_REFRESHING
+// Tcl Message: run all 
+// Tcl Message: [1184000] === Frame 0: Input send done === [3698000] [Frame0 12.5MHz freqwin] xk=10 abs_sq=0 [3702000] [Frame0 12.5MHz freqwin] xk=11 abs_sq=0 [3706000] [Frame0 12.5MHz freqwin] xk=12 abs_sq=0 [3710000] [Frame0 12.5MHz freqwin] xk=13 abs_sq=0 [3714000] [Frame0 12.5MHz freqwin] xk=14 abs_sq=0 [3718000] [Frame0 12.5MHz freqwin] xk=15 abs_sq=179776 [3722000] [Frame0 12.5MHz freqwin] xk=16 abs_sq=990026 [3726000] [Frame0 12.5MHz freqwin] xk=17 abs_sq=179776 [3730000] [Frame0 12.5MHz freqwin] xk=18 abs_sq=0 [4678000] frame 0 total energy = 1349579 (bins=256) [4682000] peak[0]: index=16  value=990026 [4762000] === Frame 1: Sending frame: 10.0 MHz freqwin === [5788000] === Frame 1: Input send done === 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 3", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, fft_abs_sq[24:0]]", 10, true); // k (RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE) - Node
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:32 PM TRT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, fft_abs_sq[24:0]]", 10, true, false, false, false, true, false); // k (RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE) - Popup Trigger - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:35 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:35 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:35 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:35 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:36 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:36 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:36 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:36 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:36 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:36 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:36 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 103 MB. Current time: 5/7/26, 12:56:36 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, fft_abs_sq[24:0]]", 10, true, false, false, false, true, false); // k (RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE) - Popup Trigger - Node
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Name"); // an (RDIResource.WaveformMenuMgr_MENU, Name)
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Waveform Style"); // an (RDIResource.WaveformMenuMgr_MENU, Waveform Style)
+selectMenu(RDIResource.WaveformMenuMgr_COLOR_MENU, "Signal Color"); // an (RDIResource.WaveformMenuMgr_COLOR_MENU, Signal Color)
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Radix"); // an (RDIResource.WaveformMenuMgr_MENU, Radix)
+selectMenuItem(RDIResource.WaveformMenuMgr_MENU_ITEM, "Unsigned Decimal"); // ae (RDIResource.WaveformMenuMgr_MENU_ITEM, Unsigned Decimal)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, fft_abs_sq[24:0]]", 10, true, false, false, false, true, false); // k (RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE) - Popup Trigger - Node
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Name"); // an (RDIResource.WaveformMenuMgr_MENU, Name)
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Waveform Style"); // an (RDIResource.WaveformMenuMgr_MENU, Waveform Style)
+selectMenuItem(RDIResource.WaveformMenuMgr_MENU_ITEM, "Analog"); // ae (RDIResource.WaveformMenuMgr_MENU_ITEM, Analog)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:43 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:45 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:45 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:45 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:45 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:45 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:45 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:46 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:46 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:46 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:56:46 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:47 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:49 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:56:51 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:51 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:51 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:51 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:56:51 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 102, 282); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer)
+/********** leftMouseClick (-510, 476, true); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:56:52 PM TRT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 102, 282, false, false, false, true, false); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) - Popup Trigger
+/********** leftMouseClick (-510, 476, true); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Waveform Style"); // an (RDIResource.WaveformMenuMgr_MENU, Waveform Style)
+selectMenu(RDIResource.WaveformMenuMgr_COLOR_MENU, "Signal Color"); // an (RDIResource.WaveformMenuMgr_COLOR_MENU, Signal Color)
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Radix"); // an (RDIResource.WaveformMenuMgr_MENU, Radix)
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Cursors"); // an (RDIResource.WaveformMenuMgr_MENU, Cursors)
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Radix"); // an (RDIResource.WaveformMenuMgr_MENU, Radix)
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Radix"); // an (RDIResource.WaveformMenuMgr_MENU, Radix)
+selectMenu(RDIResource.WaveformMenuMgr_COLOR_MENU, "Signal Color"); // an (RDIResource.WaveformMenuMgr_COLOR_MENU, Signal Color)
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Waveform Style"); // an (RDIResource.WaveformMenuMgr_MENU, Waveform Style)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, fft_abs_sq[24:0]]", 7, true); // k (RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE) - Node
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, fft_abs_sq[24:0]]", 7, true, false, false, false, true, false); // k (RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE) - Popup Trigger - Node
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Name"); // an (RDIResource.WaveformMenuMgr_MENU, Name)
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Waveform Style"); // an (RDIResource.WaveformMenuMgr_MENU, Waveform Style)
+selectMenu(RDIResource.WaveformMenuMgr_COLOR_MENU, "Signal Color"); // an (RDIResource.WaveformMenuMgr_COLOR_MENU, Signal Color)
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Radix"); // an (RDIResource.WaveformMenuMgr_MENU, Radix)
+selectMenu(RDIResource.WaveformMenuMgr_COLOR_MENU, "Signal Color"); // an (RDIResource.WaveformMenuMgr_COLOR_MENU, Signal Color)
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Waveform Style"); // an (RDIResource.WaveformMenuMgr_MENU, Waveform Style)
+selectMenu(RDIResource.WaveformMenuMgr_COLOR_MENU, "Signal Color"); // an (RDIResource.WaveformMenuMgr_COLOR_MENU, Signal Color)
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Waveform Style"); // an (RDIResource.WaveformMenuMgr_MENU, Waveform Style)
+selectMenuItem(RDIResource.WaveformMenuMgr_MENU_ITEM, "Analog Settings..."); // aq (RDIResource.WaveformMenuMgr_MENU_ITEM, Analog Settings...)
+selectRadioButton(RDIResource.WaveformAnalogSettingsDialog_HOLD, "Hold"); // a (RDIResource.WaveformAnalogSettingsDialog_HOLD)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Analog Settings"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+dismissDialog("Analog Settings"); // c (dialog10)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:07 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:07 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:07 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:07 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:07 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:08 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:08 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:08 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:08 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:08 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:08 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:08 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:09 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:09 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:09 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:09 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:09 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:09 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:09 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:09 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:09 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:09 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:10 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:10 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:10 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:10 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:10 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:10 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:10 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:10 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:11 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:11 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:11 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:11 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, peak_value[24:0]]", 5, true); // k (RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, peak_value[24:0]]", 5, true, false, false, false, true, false); // k (RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE) - Popup Trigger - Node
+selectMenu(RDIResource.WaveformMenuMgr_COLOR_MENU, "Signal Color"); // an (RDIResource.WaveformMenuMgr_COLOR_MENU, Signal Color)
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Radix"); // an (RDIResource.WaveformMenuMgr_MENU, Radix)
+selectMenuItem(RDIResource.WaveformMenuMgr_MENU_ITEM, "Unsigned Decimal"); // ae (RDIResource.WaveformMenuMgr_MENU_ITEM, Unsigned Decimal)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:16 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:16 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:16 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:17 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:17 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:17 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:17 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:17 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:17 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:17 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:18 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:18 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:18 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:18 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:18 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:18 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:19 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:19 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:19 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:19 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:19 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:19 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:20 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:20 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:22 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:22 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 555, 176); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer)
+/********** startDrag (-52, 370); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+/********** endDrag (-51, 371); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:23 PM TRT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 557, 183); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+/********** leftMouseClick (-51, 376, true); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:26 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, peak_index[7:0]]", 4, true); // k (RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, peak_index[7:0]]", 4, true, false, false, false, true, false); // k (RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE) - Popup Trigger - Node
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Name"); // an (RDIResource.WaveformMenuMgr_MENU, Name)
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Waveform Style"); // an (RDIResource.WaveformMenuMgr_MENU, Waveform Style)
+selectMenu(RDIResource.WaveformMenuMgr_COLOR_MENU, "Signal Color"); // an (RDIResource.WaveformMenuMgr_COLOR_MENU, Signal Color)
+selectMenu(RDIResource.WaveformMenuMgr_MENU, "Radix"); // an (RDIResource.WaveformMenuMgr_MENU, Radix)
+selectMenuItem(RDIResource.WaveformMenuMgr_MENU_ITEM, "Unsigned Decimal"); // ae (RDIResource.WaveformMenuMgr_MENU_ITEM, Unsigned Decimal)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:31 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:34 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:34 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:34 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:34 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:34 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:34 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:34 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:34 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:35 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:35 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:35 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:35 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:35 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:35 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:35 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:36 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:36 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:36 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:36 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:36 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:36 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:36 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:36 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:36 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:37 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:37 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:37 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:37 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:37 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:38 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:38 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:38 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:38 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:38 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:38 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:38 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:39 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:39 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:39 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:39 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:39 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:39 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:39 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:39 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:39 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:39 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:40 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:40 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:40 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:40 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:41 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:49 PM TRT
+// Elapsed time: 19 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 340, 97); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+/********** leftMouseClick (-284, 303, true); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:52 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:52 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:52 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:52 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:55 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:55 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:55 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:55 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:56 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:56 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:56 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:56 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:56 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:56 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:56 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:56 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:57 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:57 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:57 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:57 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:59 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:57:59 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:59 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:59 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:59 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:59 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:57:59 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:58:00 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:58:04 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:58:04 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:58:04 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:58:04 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:58:04 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:58:04 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:58:04 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:58:04 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 105 MB. Current time: 5/7/26, 12:58:05 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:58:05 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:58:05 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:58:05 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 12:58:05 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 17 seconds
+selectButton(RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION, "Waveform Viewer_waveform_save_configuration"); // C (RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION, Waveform Viewer_waveform_save_configuration)
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+setFileChooser("C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/tb_fft_freqwin_behav.wcfg");
+// TclEventType: WAVEFORM_UPDATE_TITLE
+selectButton("OptionPane.button", "OK", "Confirm Overwrite"); // JButton (OptionPane.button)
+// Tcl Message: save_wave_config {C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/tb_fft_freqwin_behav.wcfg} 
+selectButton(RDIResource.BaseDialog_YES, "Yes", "Waveform Configuration File"); // a (RDIResource.BaseDialog_YES)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 -norecurse C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/tb_fft_freqwin_behav.wcfg 
+// Tcl Message: set_property xsim.view C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/tb_fft_freqwin_behav.wcfg [get_filesets sim_1] 
+dismissDialog("Waveform Configuration File"); // u (dialog12)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02h:02m:47s
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (PAResourceTtoZ.TaskBanner_CLOSE)
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - tb_fft_freqwin", "DesignTask.SIMULATION");
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02h:02m:49s
+selectButton(RDIResource.BaseDialog_OK, "OK", "Confirm Close"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+dismissDialog("Confirm Close"); // u (dialog13)
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bh (Close Progress)
+// Elapsed time: 193 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fft_freqwin.sv", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("tb_fft_freqwin.sv", 254, 181); // ae (tb_fft_freqwin.sv)
+selectCodeEditor("tb_fft_freqwin.sv", 254, 181, false, false, false, false, true); // ae (tb_fft_freqwin.sv) - Double Click
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // aq (PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, simulation_run_behavioral_menu)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'tb_fft_freqwin' 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -L uvm -prj tb_fft_freqwin_vlog.prj" "xvhdl --incr --relax -prj tb_fft_freqwin_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.sim/sim_1/behav/xsim' 
+// Tcl Message: Pass Through NonSizing Optimizer 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "tb_fft_freqwin_behav -key {Behavioral:sim_1:Functional:tb_fft_freqwin} -tclbatch {tb_fft_freqwin.tcl} -view {C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/tb_fft_freqwin_behav.wcfg} -log {simulate.log} -testplusarg MEM_DIR=." 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // x (PAResourceOtoP.PAViews_PROJECT_SUMMARY, PlanAheadTabProject Summary)
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_OBJECT_TREE_REFRESHING
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:02:04 PM TRT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: open_wave_config C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/tb_fft_freqwin_behav.wcfg 
+// Tcl Message: source tb_fft_freqwin.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_fft_freqwin_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 2729.113 ; gain = 0.000 
+// 'd' command handler elapsed time: 9 seconds
+dismissDialog("Run Simulation"); // e (Run Simulation Progress)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, din_valid]", 4, false); // k (RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE)
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, din_last]", 5, false); // k (RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE)
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:02:08 PM TRT
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, "simulation_live_run_all"); // C (PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, simulation_live_run_all)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_OBJECT_TREE_REFRESHING
+// Tcl Message: run all 
+// Tcl Message: [1184000] === Frame 0: Input send done === [3698000] [Frame0 12.5MHz freqwin] xk=10 abs_sq=0 [3702000] [Frame0 12.5MHz freqwin] xk=11 abs_sq=0 [3706000] [Frame0 12.5MHz freqwin] xk=12 abs_sq=0 [3710000] [Frame0 12.5MHz freqwin] xk=13 abs_sq=0 [3714000] [Frame0 12.5MHz freqwin] xk=14 abs_sq=0 [3718000] [Frame0 12.5MHz freqwin] xk=15 abs_sq=179776 [3722000] [Frame0 12.5MHz freqwin] xk=16 abs_sq=990026 [3726000] [Frame0 12.5MHz freqwin] xk=17 abs_sq=179776 [3730000] [Frame0 12.5MHz freqwin] xk=18 abs_sq=0 [4678000] frame 0 total energy = 1349579 (bins=256) [4682000] peak[0]: index=16  value=990026 [4762000] === Frame 1: Sending frame: 10.0 MHz freqwin === [5788000] === Frame 1: Input send done === 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_fft_freqwin_behav.wcfg", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:02:14 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:02:14 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 111 MB. Current time: 5/7/26, 1:02:15 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 111 MB. Current time: 5/7/26, 1:02:15 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:02:15 PM TRT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 88, 159); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+/********** leftMouseClick (-516, 351, true); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:02:19 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:02:19 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:02:20 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 86, 182); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+/********** leftMouseClick (-518, 374, true); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 92, 179); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+/********** leftMouseClick (-512, 371, true); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:02:28 PM TRT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 102, 179); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+/********** leftMouseClick (-502, 371, true); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 115, 182); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+/********** leftMouseClick (-489, 374, true); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 140, 183); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+/********** leftMouseClick (-464, 375, true); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 159, 164); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+/********** leftMouseClick (-445, 356, true); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:02:29 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:02:31 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:02:32 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 78, 114); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+/********** leftMouseClick (-534, 326, true); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:02:36 PM TRT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 49, 117); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+/********** leftMouseClick (-560, 329, true); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 102, 136); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+/********** leftMouseClick (-513, 346, true); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 116, 162); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+/********** startDrag (-500, 370); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:02:38 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+/********** endDrag (-500, 371); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 77, 168); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer)
+/********** leftMouseClick (-535, 374, true); // b (RDIResource.RDIViews_WAVEFORM_VIEWER, PlanAheadTabWaveform Viewer_viewer) **********/
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 111 MB. Current time: 5/7/26, 1:03:27 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:27 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:27 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:27 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:27 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:27 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:27 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:27 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:28 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:28 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:28 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:28 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:28 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:28 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:29 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:29 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 111 MB. Current time: 5/7/26, 1:03:29 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:29 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 111 MB. Current time: 5/7/26, 1:03:29 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:29 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:30 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:30 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:30 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:30 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:30 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:30 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 111 MB. Current time: 5/7/26, 1:03:30 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 111 MB. Current time: 5/7/26, 1:03:31 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:31 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:31 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:31 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:32 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 111 MB. Current time: 5/7/26, 1:03:32 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:32 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:32 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:32 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:32 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:32 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:33 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 111 MB. Current time: 5/7/26, 1:03:33 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 5/7/26, 1:03:33 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 111 MB. Current time: 5/7/26, 1:03:33 PM TRT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 106 MB. Current time: 5/7/26, 1:33:38 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 104 MB. Current time: 5/7/26, 2:03:41 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 98 MB. Current time: 5/7/26, 2:37:12 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 98 MB. Current time: 5/7/26, 3:07:15 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 98 MB. Current time: 5/7/26, 3:37:18 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 98 MB. Current time: 5/7/26, 4:07:21 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 98 MB. Current time: 5/7/26, 4:37:24 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 106 MB. Current time: 5/7/26, 5:07:27 PM TRT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 107 MB. Current time: 5/7/26, 5:37:31 PM TRT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 62234 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 107 MB. Current time: 5/7/26, 5:52:03 PM TRT
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 106 MB. Current time: 5/7/26, 5:52:07 PM TRT
