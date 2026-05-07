@@ -1,0 +1,10 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_14 -L axi_utils_v2_0_10 -L c_reg_fd_v12_0_10 -L xbip_dsp48_wrapper_v3_0_6 -L xbip_pipe_v3_0_10 -L c_addsub_v12_0_19 -L c_shift_ram_v12_0_18 -L mult_gen_v12_0_22 -L floating_point_v7_1_19 -L cmpy_v6_0_25 -L floating_point_v7_0_24 -L xfft_v9_1_13 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_fft_naive_behav xil_defaultlib.tb_fft_naive xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'event_frame_started' is not connected on this instance [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part1/fft_naive_top.v:119]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

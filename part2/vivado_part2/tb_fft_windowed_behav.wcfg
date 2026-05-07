@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_fft_windowed_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_fft_windowed" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="4,587.163 ns"></ZoomStartTime>
+      <ZoomEndTime time="4,710.664 ns"></ZoomEndTime>
+      <Cursor1Time time="4,666.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="253"></NameColumnWidth>
+      <ValueColumnWidth column_width="113"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="37" />
+   <wvobject fp_name="/tb_fft_windowed/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/in_valid" type="logic">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/in_ready" type="logic">
+      <obj_property name="ElementShortName">in_ready</obj_property>
+      <obj_property name="ObjectShortName">in_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/in_last" type="logic">
+      <obj_property name="ElementShortName">in_last</obj_property>
+      <obj_property name="ObjectShortName">in_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/fft_out_valid" type="logic">
+      <obj_property name="ElementShortName">fft_out_valid</obj_property>
+      <obj_property name="ObjectShortName">fft_out_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/fft_out_last" type="logic">
+      <obj_property name="ElementShortName">fft_out_last</obj_property>
+      <obj_property name="ObjectShortName">fft_out_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/fft_xk_index" type="array">
+      <obj_property name="ElementShortName">fft_xk_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_xk_index[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/fft_abs_sq" type="array">
+      <obj_property name="ElementShortName">fft_abs_sq[24:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_abs_sq[24:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/peak_valid" type="logic">
+      <obj_property name="ElementShortName">peak_valid</obj_property>
+      <obj_property name="ObjectShortName">peak_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/peak_index" type="array">
+      <obj_property name="ElementShortName">peak_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">peak_index[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider179">
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/in_real" type="array">
+      <obj_property name="ElementShortName">in_real[11:0]</obj_property>
+      <obj_property name="ObjectShortName">in_real[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/in_imag" type="array">
+      <obj_property name="ElementShortName">in_imag[11:0]</obj_property>
+      <obj_property name="ObjectShortName">in_imag[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/win_out_valid" type="logic">
+      <obj_property name="ElementShortName">win_out_valid</obj_property>
+      <obj_property name="ObjectShortName">win_out_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/win_out_real" type="array">
+      <obj_property name="ElementShortName">win_out_real[11:0]</obj_property>
+      <obj_property name="ObjectShortName">win_out_real[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/win_out_imag" type="array">
+      <obj_property name="ElementShortName">win_out_imag[11:0]</obj_property>
+      <obj_property name="ObjectShortName">win_out_imag[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/tone12_re" type="array">
+      <obj_property name="ElementShortName">tone12_re[0:255][11:0]</obj_property>
+      <obj_property name="ObjectShortName">tone12_re[0:255][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/tone12_im" type="array">
+      <obj_property name="ElementShortName">tone12_im[0:255][11:0]</obj_property>
+      <obj_property name="ObjectShortName">tone12_im[0:255][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/tone10_re" type="array">
+      <obj_property name="ElementShortName">tone10_re[0:255][11:0]</obj_property>
+      <obj_property name="ObjectShortName">tone10_re[0:255][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/tone10_im" type="array">
+      <obj_property name="ElementShortName">tone10_im[0:255][11:0]</obj_property>
+      <obj_property name="ObjectShortName">tone10_im[0:255][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/detected_index" type="array">
+      <obj_property name="ElementShortName">detected_index[0:1][7:0]</obj_property>
+      <obj_property name="ObjectShortName">detected_index[0:1][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/detected_value" type="array">
+      <obj_property name="ElementShortName">detected_value[0:1][24:0]</obj_property>
+      <obj_property name="ObjectShortName">detected_value[0:1][24:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/peak_count" type="array">
+      <obj_property name="ElementShortName">peak_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">peak_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/frame_energy" type="array">
+      <obj_property name="ElementShortName">frame_energy[0:1][63:0]</obj_property>
+      <obj_property name="ObjectShortName">frame_energy[0:1][63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/frame_energy_idx" type="array">
+      <obj_property name="ElementShortName">frame_energy_idx[31:0]</obj_property>
+      <obj_property name="ObjectShortName">frame_energy_idx[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/running_energy" type="array">
+      <obj_property name="ElementShortName">running_energy[63:0]</obj_property>
+      <obj_property name="ObjectShortName">running_energy[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/bins_in_frame" type="array">
+      <obj_property name="ElementShortName">bins_in_frame[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bins_in_frame[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/input_count" type="array">
+      <obj_property name="ElementShortName">input_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/output_count" type="array">
+      <obj_property name="ElementShortName">output_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">output_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/FFT_LEN" type="array">
+      <obj_property name="ElementShortName">FFT_LEN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FFT_LEN[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/INDEX_WIDTH" type="array">
+      <obj_property name="ElementShortName">INDEX_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">INDEX_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/MAG_WIDTH" type="array">
+      <obj_property name="ElementShortName">MAG_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MAG_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/CLK_PERIOD" type="array">
+      <obj_property name="ElementShortName">CLK_PERIOD[63:0]</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/ENERGY_RATIO_TOL" type="other">
+      <obj_property name="ElementShortName">ENERGY_RATIO_TOL</obj_property>
+      <obj_property name="ObjectShortName">ENERGY_RATIO_TOL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_windowed/PEAK_DOMINANCE_MIN" type="array">
+      <obj_property name="ElementShortName">PEAK_DOMINANCE_MIN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PEAK_DOMINANCE_MIN[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -18,30 +18,36 @@ def quantize_signed(x: np.ndarray, bits: int = INPUT_BITS) -> np.ndarray:
 
 
 def to_twos_hex(value: int, bits: int) -> str:
-    """Convert signed integer to fixed-width two's-complement hex."""
+    """Convert signed integer to fixed-width two's-complement hex string."""
     if value < 0:
         value = (1 << bits) + value
     width = (bits + 3) // 4
     return f"{value:0{width}X}"
 
 
-def generate_complex_tone(freq_hz: float):
+def generate_complex_tone(freq_hz: float) -> np.ndarray:
     n = np.arange(N)
-    x = AMP * np.exp(1j * 2 * np.pi * freq_hz * n / FS)
-    return x
+    return AMP * np.exp(1j * 2 * np.pi * freq_hz * n / FS)
 
 
 def write_complex_mem(freq_hz: float, name: str):
+    """Write real and imaginary parts to separate .mem files (one hex per line)."""
     x = generate_complex_tone(freq_hz)
     real_q = quantize_signed(np.real(x))
     imag_q = quantize_signed(np.imag(x))
 
-    # One line per sample: real_hex imag_hex, each 12-bit two's complement.
-    path = OUT_DIR / f"{name}.mem"
-    with path.open("w", encoding="utf-8") as f:
-        for r, im in zip(real_q, imag_q):
-            f.write(f"{to_twos_hex(int(r), INPUT_BITS)} {to_twos_hex(int(im), INPUT_BITS)}\n")
-    return path
+    re_path = OUT_DIR / f"{name}_re.mem"
+    im_path = OUT_DIR / f"{name}_im.mem"
+
+    with re_path.open("w", encoding="utf-8") as f:
+        for r in real_q:
+            f.write(f"{to_twos_hex(int(r), INPUT_BITS)}\n")
+
+    with im_path.open("w", encoding="utf-8") as f:
+        for im in imag_q:
+            f.write(f"{to_twos_hex(int(im), INPUT_BITS)}\n")
+
+    return re_path, im_path
 
 
 def fft_report(freq_hz: float):
@@ -61,16 +67,16 @@ def main():
 
     tones = [
         (12.5e6, "tone_12p5MHz"),
-        (10e6, "tone_10MHz"),
+        (10e6,   "tone_10MHz"),
     ]
 
     for freq, name in tones:
-        mem_path = write_complex_mem(freq, name)
+        re_path, im_path = write_complex_mem(freq, name)
         theoretical_bin, peak_bin, _ = fft_report(freq)
         print(f"{freq/1e6:.1f} MHz")
-        print(f"  theoretical bin = {theoretical_bin:.3f}")
-        print(f"  Python FFT peak bin = {peak_bin}")
-        print(f"  wrote {mem_path}")
+        print(f"  theoretical bin  = {theoretical_bin:.3f}")
+        print(f"  Python FFT peak  = {peak_bin}")
+        print(f"  wrote {re_path.name}, {im_path.name}")
         print()
 
 

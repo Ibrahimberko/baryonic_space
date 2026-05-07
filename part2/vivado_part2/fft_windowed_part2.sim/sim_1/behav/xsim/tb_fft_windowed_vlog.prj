@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../rtl/abs_sq.v" \
+"../../../../../../rtl/part2/fft_windowed_top.v" \
+"../../../../../../rtl/part2/hamming_window.v" \
+"../../../../../../rtl/peak_detector.v" \
+
+sv xil_defaultlib  \
+"../../../../../../tb/part2/tb_fft_windowed.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

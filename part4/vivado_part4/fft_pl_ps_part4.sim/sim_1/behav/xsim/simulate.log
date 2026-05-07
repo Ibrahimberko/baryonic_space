@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+tb_part4_regs_and_peak: PASS
+$finish called at time : 185 ns : File "C:/Users/USER/Documents/baryonic_space/baryonic_space-main/tb/part4/tb_part4_regs_and_peak.sv" Line 197

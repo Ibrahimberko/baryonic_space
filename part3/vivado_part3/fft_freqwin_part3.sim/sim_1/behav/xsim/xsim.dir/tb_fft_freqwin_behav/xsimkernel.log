@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_fft_freqwin_behav/xsimk.exe -simmode gui -testplusarg MEM_DIR=. -wdb tb_fft_freqwin_behav.wdb -simrunnum 0 -socket 60178
+Design successfully loaded
+Design Loading Memory Usage: 43940 KB (Peak: 43940 KB)
+Design Loading CPU Usage: 530 ms

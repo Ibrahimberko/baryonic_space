@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../rtl/abs_sq.v" \
+"../../../../../../rtl/part1/fft_naive_top.v" \
+"../../../../../../rtl/peak_detector.v" \
+
+sv xil_defaultlib  \
+"../../../../../../tb/part1/tb_fft_naive.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_fft_freqwin_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_fft_freqwin" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="5.670001 us"></ZoomEndTime>
+      <Cursor1Time time="5.788000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="353"></NameColumnWidth>
+      <ValueColumnWidth column_width="111"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="37" />
+   <wvobject fp_name="/tb_fft_freqwin/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/din_re" type="array">
+      <obj_property name="ElementShortName">din_re[15:0]</obj_property>
+      <obj_property name="ObjectShortName">din_re[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/din_im" type="array">
+      <obj_property name="ElementShortName">din_im[15:0]</obj_property>
+      <obj_property name="ObjectShortName">din_im[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/din_valid" type="logic">
+      <obj_property name="ElementShortName">din_valid</obj_property>
+      <obj_property name="ObjectShortName">din_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/din_last" type="logic">
+      <obj_property name="ElementShortName">din_last</obj_property>
+      <obj_property name="ObjectShortName">din_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/din_ready" type="logic">
+      <obj_property name="ElementShortName">din_ready</obj_property>
+      <obj_property name="ObjectShortName">din_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/peak_index" type="array">
+      <obj_property name="ElementShortName">peak_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">peak_index[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/peak_value" type="array">
+      <obj_property name="ElementShortName">peak_value[24:0]</obj_property>
+      <obj_property name="ObjectShortName">peak_value[24:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/peak_valid" type="logic">
+      <obj_property name="ElementShortName">peak_valid</obj_property>
+      <obj_property name="ObjectShortName">peak_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/fft_abs_sq" type="array">
+      <obj_property name="ElementShortName">fft_abs_sq[24:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_abs_sq[24:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="AnalogYRangeType">ANALOG_YRANGETYPE_AUTO</obj_property>
+      <obj_property name="AnalogYRangeMin">0.000000</obj_property>
+      <obj_property name="AnalogYRRangeMax">0.000000</obj_property>
+      <obj_property name="AnalogInterpolation">ANALOG_INTERPOLATION_HOLD</obj_property>
+      <obj_property name="AnalogOffscale">ANALOG_OFFSCALE_HIDE</obj_property>
+      <obj_property name="AnalogHorizLine">0.000000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/fft_xk_index" type="array">
+      <obj_property name="ElementShortName">fft_xk_index[7:0]</obj_property>
+      <obj_property name="ObjectShortName">fft_xk_index[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/fft_out_valid" type="logic">
+      <obj_property name="ElementShortName">fft_out_valid</obj_property>
+      <obj_property name="ObjectShortName">fft_out_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/fft_out_last" type="logic">
+      <obj_property name="ElementShortName">fft_out_last</obj_property>
+      <obj_property name="ObjectShortName">fft_out_last</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/tone12_re" type="array">
+      <obj_property name="ElementShortName">tone12_re[0:255][15:0]</obj_property>
+      <obj_property name="ObjectShortName">tone12_re[0:255][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/tone12_im" type="array">
+      <obj_property name="ElementShortName">tone12_im[0:255][15:0]</obj_property>
+      <obj_property name="ObjectShortName">tone12_im[0:255][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/tone10_re" type="array">
+      <obj_property name="ElementShortName">tone10_re[0:255][15:0]</obj_property>
+      <obj_property name="ObjectShortName">tone10_re[0:255][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/tone10_im" type="array">
+      <obj_property name="ElementShortName">tone10_im[0:255][15:0]</obj_property>
+      <obj_property name="ObjectShortName">tone10_im[0:255][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/detected_index" type="array">
+      <obj_property name="ElementShortName">detected_index[0:1][7:0]</obj_property>
+      <obj_property name="ObjectShortName">detected_index[0:1][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/detected_value" type="array">
+      <obj_property name="ElementShortName">detected_value[0:1][24:0]</obj_property>
+      <obj_property name="ObjectShortName">detected_value[0:1][24:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/peak_count" type="array">
+      <obj_property name="ElementShortName">peak_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">peak_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/frame_energy" type="array">
+      <obj_property name="ElementShortName">frame_energy[0:1][63:0]</obj_property>
+      <obj_property name="ObjectShortName">frame_energy[0:1][63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/frame_energy_idx" type="array">
+      <obj_property name="ElementShortName">frame_energy_idx[31:0]</obj_property>
+      <obj_property name="ObjectShortName">frame_energy_idx[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/running_energy" type="array">
+      <obj_property name="ElementShortName">running_energy[63:0]</obj_property>
+      <obj_property name="ObjectShortName">running_energy[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/bins_in_frame" type="array">
+      <obj_property name="ElementShortName">bins_in_frame[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bins_in_frame[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/input_count" type="array">
+      <obj_property name="ElementShortName">input_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">input_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/output_count" type="array">
+      <obj_property name="ElementShortName">output_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">output_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/N" type="array">
+      <obj_property name="ElementShortName">N[31:0]</obj_property>
+      <obj_property name="ObjectShortName">N[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/LOG2N" type="array">
+      <obj_property name="ElementShortName">LOG2N[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LOG2N[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/IN_W" type="array">
+      <obj_property name="ElementShortName">IN_W[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IN_W[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/FFT_W" type="array">
+      <obj_property name="ElementShortName">FFT_W[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FFT_W[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/ABS_W" type="array">
+      <obj_property name="ElementShortName">ABS_W[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ABS_W[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/CLK_PERIOD" type="array">
+      <obj_property name="ElementShortName">CLK_PERIOD[63:0]</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/ENERGY_RATIO_TOL" type="other">
+      <obj_property name="ElementShortName">ENERGY_RATIO_TOL</obj_property>
+      <obj_property name="ObjectShortName">ENERGY_RATIO_TOL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/PEAK_DOMINANCE_MIN" type="array">
+      <obj_property name="ElementShortName">PEAK_DOMINANCE_MIN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PEAK_DOMINANCE_MIN[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/EXP_PEAK_12p5" type="array">
+      <obj_property name="ElementShortName">EXP_PEAK_12p5[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EXP_PEAK_12p5[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fft_freqwin/EXP_PEAK_10" type="array">
+      <obj_property name="ElementShortName">EXP_PEAK_10[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EXP_PEAK_10[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -106,8 +106,8 @@ XK_INDEX           = enabled
 ```
 
 Check the Vivado-generated `xfft_0` instantiation template. If port widths or
-port names differ, update the TODO-marked instantiation block in:
+port names differ, update the FFT IP instantiation block in:
 
 ```text
-rtl/fft_naive_top.v
+rtl/part1/fft_naive_top.v
 ```

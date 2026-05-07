@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../../rtl/part4/part4_axi_lite_regs.v" \
+"../../../../../../rtl/peak_detector.v" \
+
+sv xil_defaultlib  \
+"../../../../../../tb/part4/tb_part4_regs_and_peak.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part4/vivado_part4/fft_pl_ps_part4.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part4/part4_axi_lite_regs.v,1777916979,verilog,,C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/peak_detector.v,,part4_axi_lite_regs,,uvm,,,,,,
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/peak_detector.v,1777732493,verilog,,,,peak_detector,,uvm,,,,,,
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/tb/part4/tb_part4_regs_and_peak.sv,1777916551,systemVerilog,,,,tb_part4_regs_and_peak,,uvm,,,,,,

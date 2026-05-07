@@ -1,0 +1,412 @@
+
+*** Running vivado
+    with args -log system_fft_pl_ps_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_fft_pl_ps_0_0.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue May  5 00:54:39 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source system_fft_pl_ps_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+Command: synth_design -top system_fft_pl_ps_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 47684
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1114.320 ; gain = 466.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_fft_pl_ps_0_0' [x:/part4/vivado_part4_zynq/fft_pl_ps_part4_zynq.gen/sources_1/bd/system/ip/system_fft_pl_ps_0_0/synth/system_fft_pl_ps_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'fft_pl_ps_top' [X:/rtl/part4/fft_pl_ps_top.v:9]
+	Parameter N bound to: 256 - type: integer 
+	Parameter LOG2N bound to: 8 - type: integer 
+	Parameter IN_W bound to: 16 - type: integer 
+	Parameter DDS_SAMPLE_W bound to: 12 - type: integer 
+	Parameter DDS_LANE_W bound to: 16 - type: integer 
+	Parameter DDS_AXIS_W bound to: 32 - type: integer 
+	Parameter FFT_W bound to: 12 - type: integer 
+	Parameter ABS_W bound to: 25 - type: integer 
+	Parameter FFT_CONFIG_WIDTH bound to: 16 - type: integer 
+	Parameter FFT_CONFIG_TDATA bound to: 16'b0000000101010101 
+	Parameter DEFAULT_PINC bound to: 214748365 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'part4_axi_lite_regs' [X:/rtl/part4/part4_axi_lite_regs.v:21]
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter INDEX_WIDTH bound to: 8 - type: integer 
+	Parameter MAG_WIDTH bound to: 25 - type: integer 
+	Parameter DEFAULT_DDS_PINC bound to: 214748365 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'part4_axi_lite_regs' (0#1) [X:/rtl/part4/part4_axi_lite_regs.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dds_config_driver' [X:/rtl/part4/dds_config_driver.v:6]
+	Parameter PINC_WIDTH bound to: 32 - type: integer 
+	Parameter DEFAULT_PINC bound to: 214748365 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dds_config_driver' (0#1) [X:/rtl/part4/dds_config_driver.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dds_compiler_0' [X:/part4/vivado_part4_zynq/fft_pl_ps_part4_zynq.runs/system_fft_pl_ps_0_0_synth_1/.Xil/Vivado-47408-DESKTOP-PNADBHN/realtime/dds_compiler_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dds_compiler_0' (0#1) [X:/part4/vivado_part4_zynq/fft_pl_ps_part4_zynq.runs/system_fft_pl_ps_0_0_synth_1/.Xil/Vivado-47408-DESKTOP-PNADBHN/realtime/dds_compiler_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axis_phase_tvalid' of module 'dds_compiler_0' is unconnected for instance 'u_dds_compiler_0' [X:/rtl/part4/fft_pl_ps_top.v:137]
+WARNING: [Synth 8-7071] port 'm_axis_phase_tdata' of module 'dds_compiler_0' is unconnected for instance 'u_dds_compiler_0' [X:/rtl/part4/fft_pl_ps_top.v:137]
+WARNING: [Synth 8-7023] instance 'u_dds_compiler_0' of module 'dds_compiler_0' has 8 connections declared, but only 6 given [X:/rtl/part4/fft_pl_ps_top.v:137]
+INFO: [Synth 8-6157] synthesizing module 'fft_freqwin_top_part4' [X:/rtl/part4/fft_freqwin_top_part4.v:9]
+	Parameter N bound to: 256 - type: integer 
+	Parameter LOG2N bound to: 8 - type: integer 
+	Parameter IN_W bound to: 16 - type: integer 
+	Parameter FFT_W bound to: 12 - type: integer 
+	Parameter ABS_W bound to: 25 - type: integer 
+	Parameter FFT_CONFIG_WIDTH bound to: 16 - type: integer 
+	Parameter FFT_CONFIG_TDATA bound to: 16'b0000000101010101 
+INFO: [Synth 8-6157] synthesizing module 'xfft_0' [X:/part4/vivado_part4_zynq/fft_pl_ps_part4_zynq.runs/system_fft_pl_ps_0_0_synth_1/.Xil/Vivado-47408-DESKTOP-PNADBHN/realtime/xfft_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xfft_0' (0#1) [X:/part4/vivado_part4_zynq/fft_pl_ps_part4_zynq.runs/system_fft_pl_ps_0_0_synth_1/.Xil/Vivado-47408-DESKTOP-PNADBHN/realtime/xfft_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'event_frame_started' of module 'xfft_0' is unconnected for instance 'u_xfft_0' [X:/rtl/part4/fft_freqwin_top_part4.v:80]
+WARNING: [Synth 8-7071] port 'event_tlast_unexpected' of module 'xfft_0' is unconnected for instance 'u_xfft_0' [X:/rtl/part4/fft_freqwin_top_part4.v:80]
+WARNING: [Synth 8-7071] port 'event_tlast_missing' of module 'xfft_0' is unconnected for instance 'u_xfft_0' [X:/rtl/part4/fft_freqwin_top_part4.v:80]
+WARNING: [Synth 8-7071] port 'event_status_channel_halt' of module 'xfft_0' is unconnected for instance 'u_xfft_0' [X:/rtl/part4/fft_freqwin_top_part4.v:80]
+WARNING: [Synth 8-7071] port 'event_data_in_channel_halt' of module 'xfft_0' is unconnected for instance 'u_xfft_0' [X:/rtl/part4/fft_freqwin_top_part4.v:80]
+WARNING: [Synth 8-7071] port 'event_data_out_channel_halt' of module 'xfft_0' is unconnected for instance 'u_xfft_0' [X:/rtl/part4/fft_freqwin_top_part4.v:80]
+WARNING: [Synth 8-7023] instance 'u_xfft_0' of module 'xfft_0' has 20 connections declared, but only 14 given [X:/rtl/part4/fft_freqwin_top_part4.v:80]
+INFO: [Synth 8-6157] synthesizing module 'three_term_part4' [X:/rtl/part4/three_term_part4.v:56]
+	Parameter N bound to: 256 - type: integer 
+	Parameter LOG2N bound to: 8 - type: integer 
+	Parameter W bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'three_term_part4' (0#1) [X:/rtl/part4/three_term_part4.v:56]
+INFO: [Synth 8-6157] synthesizing module 'peak_detector' [X:/rtl/peak_detector.v:8]
+	Parameter MAG_WIDTH bound to: 25 - type: integer 
+	Parameter INDEX_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'peak_detector' (0#1) [X:/rtl/peak_detector.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fft_freqwin_top_part4' (0#1) [X:/rtl/part4/fft_freqwin_top_part4.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'fft_pl_ps_top' (0#1) [X:/rtl/part4/fft_pl_ps_top.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'system_fft_pl_ps_0_0' (0#1) [x:/part4/vivado_part4_zynq/fft_pl_ps_part4_zynq.gen/sources_1/bd/system/ip/system_fft_pl_ps_0_0/synth/system_fft_pl_ps_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element vld_s3_reg was removed.  [X:/rtl/part4/three_term_part4.v:246]
+WARNING: [Synth 8-6014] Unused sequential element last_s3_reg was removed.  [X:/rtl/part4/three_term_part4.v:247]
+WARNING: [Synth 8-6014] Unused sequential element m_s3_reg was removed.  [X:/rtl/part4/three_term_part4.v:248]
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_re[15] in module fft_freqwin_top_part4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_re[14] in module fft_freqwin_top_part4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_re[13] in module fft_freqwin_top_part4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_re[12] in module fft_freqwin_top_part4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_im[15] in module fft_freqwin_top_part4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_im[14] in module fft_freqwin_top_part4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_im[13] in module fft_freqwin_top_part4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_im[12] in module fft_freqwin_top_part4 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1228.078 ; gain = 580.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1228.078 ; gain = 580.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1228.078 ; gain = 580.129
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1228.078 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [x:/part4/vivado_part4_zynq/fft_pl_ps_part4_zynq.gen/sources_1/ip/xfft_0/xfft_0/xfft_0_in_context.xdc] for cell 'inst/u_fft_freqwin_top/u_xfft_0'
+Finished Parsing XDC File [x:/part4/vivado_part4_zynq/fft_pl_ps_part4_zynq.gen/sources_1/ip/xfft_0/xfft_0/xfft_0_in_context.xdc] for cell 'inst/u_fft_freqwin_top/u_xfft_0'
+Parsing XDC File [x:/part4/vivado_part4_zynq/fft_pl_ps_part4_zynq.gen/sources_1/ip/dds_compiler_0/dds_compiler_0/dds_compiler_0_in_context.xdc] for cell 'inst/u_dds_compiler_0'
+Finished Parsing XDC File [x:/part4/vivado_part4_zynq/fft_pl_ps_part4_zynq.gen/sources_1/ip/dds_compiler_0/dds_compiler_0/dds_compiler_0_in_context.xdc] for cell 'inst/u_dds_compiler_0'
+Parsing XDC File [x:/part4/vivado_part4_zynq/fft_pl_ps_part4_zynq.gen/sources_1/bd/system/ip/system_fft_pl_ps_0_0/system_fft_pl_ps_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [x:/part4/vivado_part4_zynq/fft_pl_ps_part4_zynq.gen/sources_1/bd/system/ip/system_fft_pl_ps_0_0/system_fft_pl_ps_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [X:/part4/vivado_part4_zynq/fft_pl_ps_part4_zynq.runs/system_fft_pl_ps_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [X:/part4/vivado_part4_zynq/fft_pl_ps_part4_zynq.runs/system_fft_pl_ps_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1305.332 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1305.848 ; gain = 0.516
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1305.848 ; gain = 657.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1305.848 ; gain = 657.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  X:/part4/vivado_part4_zynq/fft_pl_ps_part4_zynq.runs/system_fft_pl_ps_0_0_synth_1/dont_touch.xdc, line 15).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_fft_freqwin_top/u_xfft_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/u_dds_compiler_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1305.848 ; gain = 657.898
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'three_term_part4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               S_CAPTURE |                              001 |                               00
+                 S_SWEEP |                              010 |                               01
+                  S_DONE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'three_term_part4'
+INFO: [Synth 8-3971] The signal "three_term_part4:/xre_mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "three_term_part4:/xim_mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1305.848 ; gain = 657.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   25 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               25 Bit    Registers := 3     
+	               24 Bit    Registers := 2     
+	               12 Bit    Registers := 10    
+	                8 Bit    Registers := 10    
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 23    
++---RAMs : 
+	               3K Bit	(256 X 12 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   25 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 15    
+	   3 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP u_fft_freqwin_top/u_three_term/round_w_return1, operation Mode is: (C:0x4000)+((A:0x451f)*B)'.
+DSP Report: register u_fft_freqwin_top/u_three_term/prod_alpha_im_reg is absorbed into DSP u_fft_freqwin_top/u_three_term/round_w_return1.
+DSP Report: operator u_fft_freqwin_top/u_three_term/prod_alpha_im0 is absorbed into DSP u_fft_freqwin_top/u_three_term/round_w_return1.
+DSP Report: operator u_fft_freqwin_top/u_three_term/round_w_return1 is absorbed into DSP u_fft_freqwin_top/u_three_term/round_w_return1.
+DSP Report: Generating DSP u_fft_freqwin_top/u_three_term/round_w_return1, operation Mode is: PCIN-((D+A)*(B:0x1d71))'.
+DSP Report: register u_fft_freqwin_top/u_three_term/prod_hbeta_im_reg is absorbed into DSP u_fft_freqwin_top/u_three_term/round_w_return1.
+DSP Report: operator u_fft_freqwin_top/u_three_term/prod_hbeta_im0 is absorbed into DSP u_fft_freqwin_top/u_three_term/round_w_return1.
+DSP Report: operator u_fft_freqwin_top/u_three_term/sum_im_neighbors is absorbed into DSP u_fft_freqwin_top/u_three_term/round_w_return1.
+DSP Report: operator u_fft_freqwin_top/u_three_term/round_w_return1 is absorbed into DSP u_fft_freqwin_top/u_three_term/round_w_return1.
+DSP Report: Generating DSP u_fft_freqwin_top/abs_imag_sq_d10, operation Mode is: A*B.
+DSP Report: operator u_fft_freqwin_top/abs_imag_sq_d10 is absorbed into DSP u_fft_freqwin_top/abs_imag_sq_d10.
+DSP Report: Generating DSP u_fft_freqwin_top/u_three_term/round_w_return1, operation Mode is: (C:0x4000)+((A:0x451f)*B)'.
+DSP Report: register u_fft_freqwin_top/u_three_term/prod_alpha_re_reg is absorbed into DSP u_fft_freqwin_top/u_three_term/round_w_return1.
+DSP Report: operator u_fft_freqwin_top/u_three_term/prod_alpha_re0 is absorbed into DSP u_fft_freqwin_top/u_three_term/round_w_return1.
+DSP Report: operator u_fft_freqwin_top/u_three_term/round_w_return1 is absorbed into DSP u_fft_freqwin_top/u_three_term/round_w_return1.
+DSP Report: Generating DSP u_fft_freqwin_top/u_three_term/round_w_return1, operation Mode is: PCIN-((D+A)*(B:0x1d71))'.
+DSP Report: register u_fft_freqwin_top/u_three_term/prod_hbeta_re_reg is absorbed into DSP u_fft_freqwin_top/u_three_term/round_w_return1.
+DSP Report: operator u_fft_freqwin_top/u_three_term/prod_hbeta_re0 is absorbed into DSP u_fft_freqwin_top/u_three_term/round_w_return1.
+DSP Report: operator u_fft_freqwin_top/u_three_term/sum_re_neighbors is absorbed into DSP u_fft_freqwin_top/u_three_term/round_w_return1.
+DSP Report: operator u_fft_freqwin_top/u_three_term/round_w_return1 is absorbed into DSP u_fft_freqwin_top/u_three_term/round_w_return1.
+DSP Report: Generating DSP u_fft_freqwin_top/abs_real_sq_d10, operation Mode is: A*B.
+DSP Report: operator u_fft_freqwin_top/abs_real_sq_d10 is absorbed into DSP u_fft_freqwin_top/abs_real_sq_d10.
+INFO: [Synth 8-3971] The signal "inst/u_fft_freqwin_top/u_three_term/xre_mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/u_fft_freqwin_top/u_three_term/xim_mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1305.848 ; gain = 657.898
+---------------------------------------------------------------------------------
+ Sort Area is  u_fft_freqwin_top/u_three_term/round_w_return1_0 : 0 0 : 1057 2157 : Used 1 time 0
+ Sort Area is  u_fft_freqwin_top/u_three_term/round_w_return1_0 : 0 1 : 1100 2157 : Used 1 time 0
+ Sort Area is  u_fft_freqwin_top/u_three_term/round_w_return1_5 : 0 0 : 1057 2157 : Used 1 time 0
+ Sort Area is  u_fft_freqwin_top/u_three_term/round_w_return1_5 : 0 1 : 1100 2157 : Used 1 time 0
+ Sort Area is  u_fft_freqwin_top/abs_imag_sq_d10_6 : 0 0 : 1052 1052 : Used 1 time 0
+ Sort Area is  u_fft_freqwin_top/abs_real_sq_d10_3 : 0 0 : 1052 1052 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
+-------NONE-------
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++----------------------+----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name           | DSP Mapping                | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------+----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|three_term_part4      | (C:0x4000)+((A:0x451f)*B)' | 12     | 16     | 16     | -      | 27     | 0    | 0    | 0    | -    | -     | 1    | 0    | 
+|three_term_part4      | PCIN-((D+A)*(B:0x1d71))'   | 12     | 14     | -      | 12     | 27     | 0    | 0    | -    | 0    | 0     | 1    | 0    | 
+|fft_freqwin_top_part4 | A*B                        | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|three_term_part4      | (C:0x4000)+((A:0x451f)*B)' | 12     | 16     | 16     | -      | 27     | 0    | 0    | 0    | -    | -     | 1    | 0    | 
+|three_term_part4      | PCIN-((D+A)*(B:0x1d71))'   | 12     | 14     | -      | 12     | 27     | 0    | 0    | -    | 0    | 0     | 1    | 0    | 
+|fft_freqwin_top_part4 | A*B                        | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++----------------------+----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1468.301 ; gain = 820.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5584] The signal "inst/u_fft_freqwin_top/u_three_term/xre_mem_reg" is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+INFO: [Synth 8-5584] The signal "inst/u_fft_freqwin_top/u_three_term/xim_mem_reg" is implemented as distributed LUT RAM for the following reason(s): The timing constraints suggest that the chosen mapping will yield better timing results.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1470.969 ; gain = 823.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
+-------NONE-------
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1491.285 ; gain = 843.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1706.492 ; gain = 1058.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1706.492 ; gain = 1058.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1706.492 ; gain = 1058.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1706.492 ; gain = 1058.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1706.492 ; gain = 1058.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1706.492 ; gain = 1058.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++----------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name           | DSP Mapping         | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fft_freqwin_top_part4 | (A*B)'              | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|fft_freqwin_top_part4 | (A*B)'              | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|three_term_part4      | (C+A'*B)'           | 30     | 15     | 15     | -      | 0      | 1    | 0    | 0    | -    | -     | 0    | 1    | 
+|three_term_part4      | (PCIN-((D+A'*B)'))' | 30     | 13     | -      | 25     | 27     | 1    | 0    | -    | 0    | 0     | 1    | 1    | 
+|three_term_part4      | (C+A'*B)'           | 30     | 15     | 15     | -      | 0      | 1    | 0    | 0    | -    | -     | 0    | 1    | 
+|three_term_part4      | (PCIN-((D+A'*B)'))' | 30     | 13     | -      | 25     | 27     | 1    | 0    | -    | 0    | 0     | 1    | 1    | 
++----------------------+---------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dds_compiler_0 |         1|
+|2     |xfft_0         |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |dds_compiler |     1|
+|2     |xfft         |     1|
+|3     |CARRY4       |    11|
+|4     |DSP48E1      |     6|
+|7     |LUT1         |     5|
+|8     |LUT2         |    44|
+|9     |LUT3         |    72|
+|10    |LUT4         |    36|
+|11    |LUT5         |    16|
+|12    |LUT6         |   115|
+|13    |RAM64M       |    96|
+|14    |FDCE         |   107|
+|15    |FDPE         |    17|
+|16    |FDRE         |   226|
+|17    |FDSE         |    16|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1706.492 ; gain = 1058.543
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1706.492 ; gain = 980.773
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1706.492 ; gain = 1058.543
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1715.590 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 113 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1719.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 96 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 96 instances
+
+Synth Design complete | Checksum: 77a4fd45
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1719.281 ; gain = 1306.348
+INFO: [Coretcl 2-1174] Renamed 8 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1719.281 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'X:/part4/vivado_part4_zynq/fft_pl_ps_part4_zynq.runs/system_fft_pl_ps_0_0_synth_1/system_fft_pl_ps_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file system_fft_pl_ps_0_0_utilization_synth.rpt -pb system_fft_pl_ps_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May  5 00:55:08 2026...

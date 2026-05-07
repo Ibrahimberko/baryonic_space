@@ -1,7 +1,0 @@
-Running: xsim.dir/tb_fft_naive_behav/xsimk.exe -simmode gui -testplusarg MEM_DIR=C:/Users/USER/Documents/baryonic_space/baryonic_space-main/mem -wdb tb_fft_naive_behav.wdb -simrunnum 0 -socket 60115
-Design successfully loaded
-Design Loading Memory Usage: 52404 KB (Peak: 52404 KB)
-Design Loading CPU Usage: 483 ms
-Simulation completed
-Simulation Memory Usage: 59988 KB (Peak: 59988 KB)
-Simulation CPU Usage: 2092 ms

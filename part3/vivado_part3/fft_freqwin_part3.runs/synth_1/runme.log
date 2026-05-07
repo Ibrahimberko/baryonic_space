@@ -1,0 +1,376 @@
+
+*** Running vivado
+    with args -log fft_freqwin_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fft_freqwin_top.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Thu May  7 12:24:57 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source fft_freqwin_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.srcs/utils_1/imports/synth_1/fft_freqwin_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.srcs/utils_1/imports/synth_1/fft_freqwin_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top fft_freqwin_top -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 34188
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1159.332 ; gain = 467.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'fft_abs_sq', assumed default net type 'wire' [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/fft_freqwin_top.v:135]
+INFO: [Synth 8-11241] undeclared symbol 'fft_xk_index', assumed default net type 'wire' [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/fft_freqwin_top.v:136]
+INFO: [Synth 8-11241] undeclared symbol 'fft_out_valid', assumed default net type 'wire' [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/fft_freqwin_top.v:137]
+INFO: [Synth 8-11241] undeclared symbol 'fft_out_last', assumed default net type 'wire' [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/fft_freqwin_top.v:138]
+INFO: [Synth 8-6157] synthesizing module 'fft_freqwin_top' [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/fft_freqwin_top.v:9]
+INFO: [Synth 8-6157] synthesizing module 'xfft_0' [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.runs/synth_1/.Xil/Vivado-34652-DESKTOP-PNADBHN/realtime/xfft_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'xfft_0' (0#1) [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.runs/synth_1/.Xil/Vivado-34652-DESKTOP-PNADBHN/realtime/xfft_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'event_frame_started' of module 'xfft_0' is unconnected for instance 'u_xfft_0' [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/fft_freqwin_top.v:72]
+WARNING: [Synth 8-7071] port 'event_tlast_unexpected' of module 'xfft_0' is unconnected for instance 'u_xfft_0' [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/fft_freqwin_top.v:72]
+WARNING: [Synth 8-7071] port 'event_tlast_missing' of module 'xfft_0' is unconnected for instance 'u_xfft_0' [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/fft_freqwin_top.v:72]
+WARNING: [Synth 8-7071] port 'event_status_channel_halt' of module 'xfft_0' is unconnected for instance 'u_xfft_0' [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/fft_freqwin_top.v:72]
+WARNING: [Synth 8-7071] port 'event_data_in_channel_halt' of module 'xfft_0' is unconnected for instance 'u_xfft_0' [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/fft_freqwin_top.v:72]
+WARNING: [Synth 8-7071] port 'event_data_out_channel_halt' of module 'xfft_0' is unconnected for instance 'u_xfft_0' [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/fft_freqwin_top.v:72]
+WARNING: [Synth 8-7023] instance 'u_xfft_0' of module 'xfft_0' has 20 connections declared, but only 14 given [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/fft_freqwin_top.v:72]
+INFO: [Synth 8-6157] synthesizing module 'three_term' [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/three_term.v:55]
+	Parameter N bound to: 256 - type: integer 
+	Parameter LOG2N bound to: 8 - type: integer 
+	Parameter W bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'three_term' (0#1) [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/three_term.v:55]
+INFO: [Synth 8-6157] synthesizing module 'abs_sq' [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/abs_sq.v:6]
+	Parameter IN_WIDTH bound to: 12 - type: integer 
+	Parameter OUT_WIDTH bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'abs_sq' (0#1) [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/abs_sq.v:6]
+INFO: [Synth 8-6157] synthesizing module 'peak_detector' [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/peak_detector.v:8]
+	Parameter MAG_WIDTH bound to: 25 - type: integer 
+	Parameter INDEX_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'peak_detector' (0#1) [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/peak_detector.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fft_freqwin_top' (0#1) [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/fft_freqwin_top.v:9]
+WARNING: [Synth 8-6014] Unused sequential element vld_s3_reg was removed.  [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/three_term.v:254]
+WARNING: [Synth 8-6014] Unused sequential element last_s3_reg was removed.  [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/three_term.v:255]
+WARNING: [Synth 8-6014] Unused sequential element m_s3_reg was removed.  [C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/three_term.v:256]
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_re[15] in module fft_freqwin_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_re[14] in module fft_freqwin_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_re[13] in module fft_freqwin_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_re[12] in module fft_freqwin_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_im[15] in module fft_freqwin_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_im[14] in module fft_freqwin_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_im[13] in module fft_freqwin_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_im[12] in module fft_freqwin_top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1270.438 ; gain = 578.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1270.438 ; gain = 578.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1270.438 ; gain = 578.914
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1270.438 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.gen/sources_1/ip/xfft_0/xfft_0/xfft_0_in_context.xdc] for cell 'u_xfft_0'
+Finished Parsing XDC File [c:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.gen/sources_1/ip/xfft_0/xfft_0/xfft_0_in_context.xdc] for cell 'u_xfft_0'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1335.891 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1335.891 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1335.891 ; gain = 644.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1335.891 ; gain = 644.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for u_xfft_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1335.891 ; gain = 644.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'three_term'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               S_CAPTURE |                              001 |                               00
+                 S_SWEEP |                              010 |                               01
+                  S_DONE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'three_term'
+INFO: [Synth 8-3971] The signal "three_term:/xre_mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "three_term:/xim_mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1335.891 ; gain = 644.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   30 Bit       Adders := 2     
+	   2 Input   25 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
++---Registers : 
+	               30 Bit    Registers := 4     
+	               25 Bit    Registers := 2     
+	               12 Bit    Registers := 8     
+	                8 Bit    Registers := 6     
+	                1 Bit    Registers := 9     
++---RAMs : 
+	               3K Bit	(256 X 12 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   25 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 4     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP u_three_term/prod_hbeta_im0, operation Mode is: (D+A)*(B:0x1d71).
+DSP Report: operator u_three_term/prod_hbeta_im0 is absorbed into DSP u_three_term/prod_hbeta_im0.
+DSP Report: operator u_three_term/sum_im_neighbors is absorbed into DSP u_three_term/prod_hbeta_im0.
+DSP Report: Generating DSP u_three_term/prod_alpha_im0, operation Mode is: (A:0x451f)*B.
+DSP Report: operator u_three_term/prod_alpha_im0 is absorbed into DSP u_three_term/prod_alpha_im0.
+DSP Report: Generating DSP u_abs_sq/imag_sq, operation Mode is: A*B.
+DSP Report: operator u_abs_sq/imag_sq is absorbed into DSP u_abs_sq/imag_sq.
+DSP Report: Generating DSP u_three_term/prod_hbeta_re0, operation Mode is: (D+A)*(B:0x1d71).
+DSP Report: operator u_three_term/prod_hbeta_re0 is absorbed into DSP u_three_term/prod_hbeta_re0.
+DSP Report: operator u_three_term/sum_re_neighbors is absorbed into DSP u_three_term/prod_hbeta_re0.
+DSP Report: Generating DSP u_three_term/prod_alpha_re0, operation Mode is: (A:0x451f)*B.
+DSP Report: operator u_three_term/prod_alpha_re0 is absorbed into DSP u_three_term/prod_alpha_re0.
+DSP Report: Generating DSP u_abs_sq/real_sq, operation Mode is: A*B.
+DSP Report: operator u_abs_sq/real_sq is absorbed into DSP u_abs_sq/real_sq.
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_re[15] in module fft_freqwin_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_re[14] in module fft_freqwin_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_re[13] in module fft_freqwin_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_re[12] in module fft_freqwin_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_im[15] in module fft_freqwin_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_im[14] in module fft_freqwin_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_im[13] in module fft_freqwin_top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_data_tdata_im[12] in module fft_freqwin_top is either unconnected or has no load
+INFO: [Synth 8-3971] The signal "fft_freqwin_top/u_three_term/xre_mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "fft_freqwin_top/u_three_term/xim_mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1335.891 ; gain = 644.367
+---------------------------------------------------------------------------------
+ Sort Area is  u_abs_sq/imag_sq_8 : 0 0 : 1052 1052 : Used 1 time 0
+ Sort Area is  u_abs_sq/real_sq_4 : 0 0 : 1052 1052 : Used 1 time 0
+ Sort Area is  u_three_term/prod_alpha_im0_6 : 0 0 : 950 950 : Used 1 time 0
+ Sort Area is  u_three_term/prod_alpha_re0_0 : 0 0 : 950 950 : Used 1 time 0
+ Sort Area is  u_three_term/prod_hbeta_im0_7 : 0 0 : 886 886 : Used 1 time 0
+ Sort Area is  u_three_term/prod_hbeta_re0_2 : 0 0 : 886 886 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
+-------NONE-------
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|three_term  | (D+A)*(B:0x1d71) | 12     | 14     | -      | 12     | 27     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|three_term  | (A:0x451f)*B     | 12     | 16     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|abs_sq      | A*B              | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|three_term  | (D+A)*(B:0x1d71) | 12     | 14     | -      | 12     | 27     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|three_term  | (A:0x451f)*B     | 12     | 16     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|abs_sq      | A*B              | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1516.969 ; gain = 825.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1517.562 ; gain = 826.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
+-------NONE-------
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance u_three_term/xre_mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_three_term/xre_mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_three_term/xre_mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_three_term/xim_mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_three_term/xim_mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_three_term/xim_mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1533.844 ; gain = 842.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1748.930 ; gain = 1057.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1748.930 ; gain = 1057.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1748.930 ; gain = 1057.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1748.930 ; gain = 1057.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1749.871 ; gain = 1058.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1749.871 ; gain = 1058.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|abs_sq      | A*B         | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|abs_sq      | A*B         | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|three_term  | (D+A*B)'    | 30     | 13     | -      | 25     | 27     | 0    | 0    | -    | 0    | 0     | 0    | 1    | 
+|three_term  | (A*B)'      | 30     | 15     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|three_term  | (D+A*B)'    | 30     | 13     | -      | 25     | 27     | 0    | 0    | -    | 0    | 0     | 0    | 1    | 
+|three_term  | (A*B)'      | 30     | 15     | -      | -      | 28     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xfft_0        |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |xfft     |     1|
+|2     |BUFG     |     1|
+|3     |CARRY4   |    39|
+|4     |DSP48E1  |     6|
+|7     |LUT1     |    34|
+|8     |LUT2     |   155|
+|9     |LUT3     |   123|
+|10    |LUT4     |    34|
+|11    |LUT5     |    27|
+|12    |LUT6     |     9|
+|13    |RAMB18E1 |     6|
+|14    |FDCE     |    67|
+|15    |FDPE     |     2|
+|16    |FDRE     |    67|
+|17    |IBUF     |    28|
+|18    |OBUF     |    35|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1749.871 ; gain = 1058.348
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1749.871 ; gain = 992.895
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1749.871 ; gain = 1058.348
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1749.871 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1749.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7081c9a7
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1749.871 ; gain = 1288.621
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1749.871 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.runs/synth_1/fft_freqwin_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file fft_freqwin_top_utilization_synth.rpt -pb fft_freqwin_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  7 12:25:24 2026...

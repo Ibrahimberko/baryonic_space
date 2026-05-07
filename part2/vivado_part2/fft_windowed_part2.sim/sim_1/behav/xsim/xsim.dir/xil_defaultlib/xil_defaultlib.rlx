@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part2/vivado_part2/fft_windowed_part2.gen/sources_1/ip/xfft_0/sim/xfft_0.vhd,1777827631,vhdl,,,,xfft_0,,,,,,,,
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part2/vivado_part2/fft_windowed_part2.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/abs_sq.v,1777710603,verilog,,C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part2/fft_windowed_top.v,,abs_sq,,uvm,,,,,,
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part2/fft_windowed_top.v,1778147233,verilog,,C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part2/hamming_window.v,,fft_windowed_top,,uvm,,,,,,
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part2/hamming_window.v,1778139867,verilog,,C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/peak_detector.v,,hamming_window,,uvm,,,,,,
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/peak_detector.v,1777732493,verilog,,,,peak_detector,,uvm,,,,,,
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/tb/part2/tb_fft_windowed.sv,1778147642,systemVerilog,,,,tb_fft_windowed,,uvm,,,,,,

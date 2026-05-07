@@ -1,0 +1,49 @@
+Time resolution is 1 ps
+Note:   - SCALING_SCH: in_ptr = 1, out_ptr = 1
+Time: 0 ps  Iteration: 0  Process: /tb_fft_naive/dut/u_xfft_0/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__952  File: C:/Xilinx/Vivado/2024.2/data/ip/xilinx/xfft_v9_1/hdl/axi_wrapper.vhd
+Note:     - C_CHANNELS  = 1
+Time: 0 ps  Iteration: 0  Process: /tb_fft_naive/dut/u_xfft_0/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__952  File: C:/Xilinx/Vivado/2024.2/data/ip/xilinx/xfft_v9_1/hdl/axi_wrapper.vhd
+Note:     - field_width = 8
+Time: 0 ps  Iteration: 0  Process: /tb_fft_naive/dut/u_xfft_0/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__952  File: C:/Xilinx/Vivado/2024.2/data/ip/xilinx/xfft_v9_1/hdl/axi_wrapper.vhd
+Note:   - Copying SCALE_SCH from 8 downto 1 to 8 downto 1
+Time: 0 ps  Iteration: 0  Process: /tb_fft_naive/dut/u_xfft_0/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__952  File: C:/Xilinx/Vivado/2024.2/data/ip/xilinx/xfft_v9_1/hdl/axi_wrapper.vhd
+Note:   - SCALING_SCH: in_ptr = 1, out_ptr = 1
+Time: 0 ps  Iteration: 1  Process: /tb_fft_naive/dut/u_xfft_0/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__952  File: C:/Xilinx/Vivado/2024.2/data/ip/xilinx/xfft_v9_1/hdl/axi_wrapper.vhd
+Note:     - C_CHANNELS  = 1
+Time: 0 ps  Iteration: 1  Process: /tb_fft_naive/dut/u_xfft_0/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__952  File: C:/Xilinx/Vivado/2024.2/data/ip/xilinx/xfft_v9_1/hdl/axi_wrapper.vhd
+Note:     - field_width = 8
+Time: 0 ps  Iteration: 1  Process: /tb_fft_naive/dut/u_xfft_0/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__952  File: C:/Xilinx/Vivado/2024.2/data/ip/xilinx/xfft_v9_1/hdl/axi_wrapper.vhd
+Note:   - Copying SCALE_SCH from 8 downto 1 to 8 downto 1
+Time: 0 ps  Iteration: 1  Process: /tb_fft_naive/dut/u_xfft_0/U0/i_synth/axi_wrapper/gen_config_fifo_in/line__952  File: C:/Xilinx/Vivado/2024.2/data/ip/xilinx/xfft_v9_1/hdl/axi_wrapper.vhd
+[158000] === Frame 0: Sending frame: 12.5 MHz ===
+[1184000] === Frame 1: Sending frame: 10.0 MHz ===
+[2662000] [Frame0 12.5MHz] xk=10 abs_sq=0
+[2666000] [Frame0 12.5MHz] xk=11 abs_sq=0
+[2670000] [Frame0 12.5MHz] xk=12 abs_sq=0
+[2674000] [Frame0 12.5MHz] xk=13 abs_sq=0
+[2678000] [Frame0 12.5MHz] xk=14 abs_sq=0
+[2682000] [Frame0 12.5MHz] xk=15 abs_sq=0
+[2686000] [Frame0 12.5MHz] xk=16 abs_sq=3392965
+[2690000] [Frame0 12.5MHz] xk=17 abs_sq=0
+[2694000] [Frame0 12.5MHz] xk=18 abs_sq=0
+[3642000] frame 0 total energy = 3392966 (bins=256)
+[3646000] peak[0]: index=16  value=3392965
+[3686000] [Frame1 10.0MHz] xk=10 abs_sq=15426
+[3690000] [Frame1 10.0MHz] xk=11 abs_sq=36941
+[3694000] [Frame1 10.0MHz] xk=12 abs_sq=185434
+[3698000] [Frame1 10.0MHz] xk=13 abs_sq=2968146
+[3702000] [Frame1 10.0MHz] xk=14 abs_sq=82645
+[3706000] [Frame1 10.0MHz] xk=15 abs_sq=24484
+[3710000] [Frame1 10.0MHz] xk=16 abs_sq=11642
+[3714000] [Frame1 10.0MHz] xk=17 abs_sq=6740
+[3718000] [Frame1 10.0MHz] xk=18 abs_sq=4394
+[4666000] frame 1 total energy = 3391331 (bins=256)
+[4670000] peak[1]: index=13  value=2968146
+---------------------------------------------------------
+Frame 0 (12.5 MHz): peak bin=16, |X|^2=3392965, total=3392966
+Frame 1 (10.0 MHz): peak bin=13, |X|^2=2968146, total=3391331
+Energy ratio (smaller/larger) = 1.000 (tol >= 0.750)
+Peak dominance: tone0=256.0x, tone1=224.1x (min=4)
+---------------------------------------------------------
+tb_fft_naive: PASS
+$finish called at time : 4710 ns : File "C:/Users/USER/Documents/baryonic_space/baryonic_space-main/tb/part1/tb_fft_naive.sv" Line 288

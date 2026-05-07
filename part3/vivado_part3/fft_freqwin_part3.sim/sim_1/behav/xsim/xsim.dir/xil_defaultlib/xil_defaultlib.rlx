@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.gen/sources_1/ip/xfft_0/sim/xfft_0.vhd,1777924943,vhdl,,,,xfft_0,,,,,,,,
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/part3/vivado_part3/fft_freqwin_part3.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/abs_sq.v,1777710603,verilog,,C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/fft_freqwin_top.v,,abs_sq,,uvm,,,,,,
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/fft_freqwin_top.v,1778147515,verilog,,C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/peak_detector.v,,fft_freqwin_top,,uvm,,,,,,
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/three_term.v,1777923583,verilog,,,,three_term,,uvm,,,,,,
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/peak_detector.v,1777732493,verilog,,C:/Users/USER/Documents/baryonic_space/baryonic_space-main/rtl/part3/three_term.v,,peak_detector,,uvm,,,,,,
+C:/Users/USER/Documents/baryonic_space/baryonic_space-main/tb/part3/tb_fft_freqwin.sv,1777896454,systemVerilog,,,,tb_fft_freqwin,,uvm,,,,,,

@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_fft_windowed_behav/xsimk.exe -simmode gui -testplusarg MEM_DIR=. -wdb tb_fft_windowed_behav.wdb -simrunnum 0 -socket 60184
+Design successfully loaded
+Design Loading Memory Usage: 43932 KB (Peak: 43932 KB)
+Design Loading CPU Usage: 468 ms

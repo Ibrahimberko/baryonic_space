@@ -1,69 +1,87 @@
 # FPGA FFT Project - Step 2
 
-This step adds the Part 1 RTL and simulation files for the naive FFT task.
+Bu adim Part 1 RTL tasarimini ve testbench akisini aciklar. Part 1, giris
+kompleks sample verisini zaman alaninda pencere uygulamadan dogrudan Xilinx
+FFT IP (`xfft_0`) bloguna yollar.
 
 ## Files
 
+- `rtl/part1/fft_naive_top.v`
+  - `xfft_0` IP'sini sarar.
+  - Reset sonrasi FFT konfigurasyon kelimesini gonderir.
+  - Giris sample verisini AXI4-Stream formatinda FFT IP'ye aktarir.
+  - FFT cikisindan `abs(FFT)^2` hesaplatir ve peak detector'a yollar.
 - `rtl/abs_sq.v`
-  - Computes `real^2 + imag^2`.
+  - `real^2 + imag^2` degerini hesaplar.
 - `rtl/peak_detector.v`
-  - Finds the largest `abs_sq` value in one 256-sample FFT frame.
-- `rtl/fft_naive_top.v`
-  - Wraps the Xilinx `xfft_0` IP.
-  - Sends one configuration word to the FFT IP after reset.
-  - Computes `abs(FFT)^2`.
-  - Reports the peak FFT bin using `xk_index`.
-- `sim/tb_fft_naive.sv`
-  - Generates a 200 MHz clock.
-  - Reads `mem/tone_12p5MHz.mem` and `mem/tone_10MHz.mem`.
-  - Sends two FFT frames.
-  - Checks the expected peak bins: 16 and 13.
+  - Bir 256-sample FFT frame icinde en buyuk `abs_sq` degerini ve bin
+    indeksini bulur.
+- `tb/part1/tb_fft_naive.sv`
+  - 200 MHz clock uretir.
+  - `mem/tone_12p5MHz_re.mem`, `mem/tone_12p5MHz_im.mem`,
+    `mem/tone_10MHz_re.mem`, `mem/tone_10MHz_im.mem` dosyalarini okur.
+  - Iki FFT frame gonderir.
+  - Beklenen peak bin degerlerini kontrol eder: 16 ve 13.
+- `scripts/create_part1_vivado_project.tcl`
+  - Part 1 Vivado projesini sifirdan olusturur, `xfft_0` IP'sini uretir ve
+    simulasyonu calistirir.
 - `scripts/add_part1_sources.tcl`
-  - Adds these files to the Vivado project.
+  - Var olan bir Vivado projesine Part 1 kaynaklarini eklemek icin yardimci
+    script.
 
-## Vivado usage
+## Vivado Usage
 
-Open your Vivado project, then run this Tcl command from the Vivado Tcl Console:
-
-```tcl
-source C:/Users/USER/Documents/baryonic_space/baryonic_space-main/scripts/add_part1_sources.tcl
-```
-
-Then run:
+Yeni Part 1 projesini olusturmak ve simulasyonu calistirmak icin Vivado Tcl
+Console'da:
 
 ```tcl
-launch_simulation
+source C:/Users/USER/Documents/baryonic_space/baryonic_space-main/scripts/create_part1_vivado_project.tcl
 ```
 
-Expected simulation messages:
+Script repo kokunu kendi konumundan bulur. XPR icindeki RTL/testbench
+kaynaklari relative path kullanir. Tone `.mem` dosyalari sim_1 fileset'ine
+eklenir ve Vivado tarafindan XSim run dizinine kopyalanir; simulasyon
+`MEM_DIR=.` ile bu kopyalari okur. Bu yuzden klasor yapisi korunursa proje
+baska bir bilgisayarda da acilabilir.
+
+## Expected Simulation Messages
 
 ```text
-12.5 MHz peak bin = 16
-10.0 MHz peak bin = 13
-Naive FFT simulation finished.
+Frame 0 (12.5 MHz): peak bin=16
+Frame 1 (10.0 MHz): peak bin=13
+tb_fft_naive: PASS
 ```
 
-## Important notes
+Ek kontroller:
 
-The FFT IP instance name is assumed to be:
+- Toplam spektral enerji iki frame arasinda yakin olmalidir.
+- Peak dominance orani minimum esigi gecmelidir.
+- Giris ve cikis AXI frame uzunluklari 256 sample olmalidir.
+
+## Important Notes
+
+FFT IP ayarlari:
 
 ```text
-xfft_0
+Transform Length   = 256
+Input Data Width   = 12
+Data Format        = Fixed Point
+Output Ordering    = Natural Order
+XK_INDEX           = enabled
 ```
 
-The wrapper assumes Xilinx FFT AXI data packing for 12-bit complex samples:
+AXI data packing:
 
 ```text
 tdata[11:0]  = real
 tdata[27:16] = imag
 ```
 
-If Vivado generated a different `xfft_0` port list or a different `tuser` width, open the IP's instantiation template and adjust `rtl/fft_naive_top.v`.
-
-The default FFT configuration word is:
+Varsayilan FFT konfigurasyon kelimesi:
 
 ```text
-16'h0001
+16'h0155
 ```
 
-This is intended as forward FFT configuration. If the IP reports overflow or unexpected scaling, adjust `FFT_CONFIG_TDATA` according to the generated Xilinx FFT IP configuration format.
+Bu konfigurasyon forward FFT icindir ve 256-point scaled FFT icin toplam
+1/256 olcekleme saglayan `SCALE_SCH = 8'b10101010` degerini kullanir.
